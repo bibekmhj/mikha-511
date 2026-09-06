@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.python-version
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# Tooling
+.ruff_cache/
+.mypy_cache/
+.pre-commit-hooks-cache/
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
+
+# Local data — never committed
+# (manifest is committed; the actual images it points to are not)
+data/images/
+data/cache/
+bench/images/
+*.pt
+*.onnx
+*.jpg
+*.jpeg
+*.png
+*.mp4
+
+# Exceptions: documentation figures and gallery samples are allowed
+!docs/**/*.png
+!docs/**/*.jpg
+
+# Model artifacts
+models/
+runs/
+
+# Local secrets / env
+.env
+.env.local
+
+# Results workspace (checked-in tables/plots welcome; scratch dirs not)
+results/scratch/
+
+# SQLite
+*.sqlite
+*.sqlite-journal
+*.db

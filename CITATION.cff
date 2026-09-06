@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use Mikha-511 or Mikha-Bench in academic work, please cite it as below."
+title: "Mikha-511: An open-source reference implementation and degradation-stratified benchmark for flooded-road detection on public traffic-camera imagery"
+abstract: >-
+  Mikha-511 provides three artifacts for the flooded-road-detection problem on
+  public 511 traffic-camera imagery: (1) Mikha-Aug, a deterministic library of
+  five realistic 511-style degradation transforms (rain-on-lens, fog, night,
+  glare, low-bitrate JPEG); (2) Mikha-Bench, a publicly released
+  degradation-stratified evaluation corpus with per-image polygon water masks;
+  and (3) Mikha-Ref, a laptop-runnable reference implementation combining a
+  pretrained water-segmentation backbone with a temporal-persistence gate and
+  calibrated confidence, intended as a reproducible baseline for the community.
+type: software
+authors:
+  - given-names: "Bibek"
+    family-names: "Maharjan"
+    email: "bbkmhj06@gmail.com"
+version: "0.0.1-scaffold"
+date-released: "2026-09-06"
+license: "Apache-2.0"
+repository-code: "https://github.com/bibekmhj/mikha-511"
+keywords:
+  - "computer vision"
+  - "flood detection"
+  - "traffic cameras"
+  - "511"
+  - "public safety"
+  - "benchmark"
+  - "dataset"

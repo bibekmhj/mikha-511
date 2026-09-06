@@ -1,0 +1,68 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mikha"
+version = "0.0.1"
+description = "Open-source reference implementation and degradation-stratified benchmark for flooded-road detection on public traffic-camera imagery."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+authors = [
+  { name = "Bibek Maharjan", email = "bbkmhj06@gmail.com" },
+]
+keywords = ["computer-vision", "flood-detection", "traffic-cameras", "benchmark", "public-safety"]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Image Recognition",
+]
+
+# NOTE: dependencies intentionally NOT installed at M0. They will be installed
+# and pinned during M1 when the first PoC script actually needs them. Listed
+# here so the shape of the project is documented from day one.
+dependencies = [
+  "numpy>=1.26,<3",
+  "opencv-python-headless>=4.9,<5",
+  "pillow>=10.2",
+  "httpx>=0.27",
+  "fastapi>=0.110",
+  "uvicorn[standard]>=0.29",
+  "pydantic>=2.6",
+]
+
+[project.optional-dependencies]
+model = [
+  # Pulled in only when Mikha-Ref actually needs a model (M5).
+  "ultralytics>=8.2",
+  "torch>=2.2",
+]
+dev = [
+  "pytest>=8.0",
+  "pytest-cov>=5.0",
+  "ruff>=0.5",
+  "pre-commit>=3.7",
+]
+
+[project.urls]
+Repository = "https://github.com/bibekmhj/mikha-511"
+Issues = "https://github.com/bibekmhj/mikha-511/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mikha"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "N"]
+ignore = ["E501"]  # line-length handled by formatter
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra -q"

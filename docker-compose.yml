@@ -1,0 +1,13 @@
+# Mikha-511 reference topology.
+# At M0 this only defines the shape of the running system. The `api` service
+# runs the M0 smoke command; a real FastAPI/HTMX dashboard replaces it in M5,
+# and the `poller` service is added in M5 as well.
+
+services:
+  api:
+    build: .
+    image: mikha-511:dev
+    container_name: mikha-api
+    restart: unless-stopped
+    # M0: just prove the image works. Replaced by uvicorn in M5.
+    command: ["python", "-c", "import mikha; print(f'mikha {mikha.__version__} ok')"]
