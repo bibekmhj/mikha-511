@@ -58,6 +58,18 @@ EF2013_IRRELEVANT_URL = (
 
 SOURCE_TAG = "eu_flood_2013"
 
+# Wikimedia's User-Agent policy requires a specific tool name AND a way to
+# contact us (URL or email). Requests with generic or missing UAs get 403.
+# See: https://foundation.wikimedia.org/wiki/Policy:User-Agent_policy
+WIKIMEDIA_UA = "Mikha511/0.1 (https://github.com/bibekmhj/mikha-511; bbkmhj06@gmail.com) httpx"
+WIKIMEDIA_HEADERS = {
+    "User-Agent": WIKIMEDIA_UA,
+    "Accept": "image/*,*/*;q=0.8",
+    # Wikimedia responds better to Api-User-Agent as well for scripts.
+    "Api-User-Agent": WIKIMEDIA_UA,
+    "From": "bbkmhj06@gmail.com",
+}
+
 
 def _download_text(url: str, dest: Path, *, client: httpx.Client) -> None:
     r = client.get(url, timeout=60.0, follow_redirects=True)
@@ -110,8 +122,14 @@ def main(argv: list[str] | None = None) -> int:  # noqa: PLR0912, PLR0915
     ap.add_argument(
         "--sleep-ms",
         type=int,
-        default=250,
-        help="Polite delay between Wikimedia downloads (ms). Default 250.",
+        default=1000,
+        help="Polite delay between Wikimedia downloads (ms). Default 1000.",
+    )
+    ap.add_argument(
+        "--max-retries",
+        type=int,
+        default=5,
+        help="Retry attempts per image on HTTP 429/503. Default 5.",
     )
     args = ap.parse_args(argv)
 
@@ -125,7 +143,7 @@ def main(argv: list[str] | None = None) -> int:  # noqa: PLR0912, PLR0915
         flooding_path = Path(td) / "flooding.txt"
         irrelevant_path = Path(td) / "irrelevant.txt"
 
-        with httpx.Client(headers={"User-Agent": "Mikha-511/0.1 (research)"}) as client:
+        with httpx.Client(headers=WIKIMEDIA_HEADERS, timeout=60.0) as client:
             print("[eu_flood] fetching EF2013 metadata + relevance from GitHub…")
             _download_text(EF2013_METADATA_URL, meta_path, client=client)
             _download_text(EF2013_FLOODING_URL, flooding_path, client=client)
@@ -194,12 +212,40 @@ def main(argv: list[str] | None = None) -> int:  # noqa: PLR0912, PLR0915
                 if rec.url in existing_urls:
                     dup_skip += 1
                     continue
-                try:
-                    resp = client.get(rec.url, timeout=30.0, follow_redirects=True)
-                    resp.raise_for_status()
-                except httpx.HTTPError as exc:
+                # Retry with exponential backoff on 429/503; honor Retry-After.
+                resp = None
+                last_err = None
+                for attempt in range(args.max_retries + 1):
+                    try:
+                        r = client.get(rec.url, timeout=30.0, follow_redirects=True)
+                        if r.status_code in (429, 503):
+                            retry_after = r.headers.get("retry-after", "")
+                            if retry_after.isdigit():
+                                wait = float(retry_after)
+                            else:
+                                wait = min(60.0, 2.0**attempt)
+                            print(
+                                f"[eu_flood]   rate-limited status={r.status_code} "
+                                f"attempt={attempt + 1}/{args.max_retries + 1} "
+                                f"waiting {wait:.1f}s (pageid={rec.pageid})"
+                            )
+                            time.sleep(wait)
+                            last_err = f"HTTP {r.status_code}"
+                            continue
+                        r.raise_for_status()
+                        resp = r
+                        break
+                    except httpx.HTTPStatusError as exc:
+                        last_err = (
+                            f"status={exc.response.status_code} body={exc.response.text[:120]!r}"
+                        )
+                        break
+                    except httpx.HTTPError as exc:
+                        last_err = f"{type(exc).__name__}: {exc}"
+                        time.sleep(min(30.0, 2.0**attempt))
+                if resp is None:
                     http_error += 1
-                    print(f"[eu_flood]   HTTP-ERROR  {rec.pageid}  {type(exc).__name__}")
+                    print(f"[eu_flood]   HTTP-ERROR  {rec.pageid}  {last_err}")
                     time.sleep(args.sleep_ms / 1000.0)
                     continue
 

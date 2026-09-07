@@ -26,6 +26,12 @@ from .manifest import (
     save_manifest,
     validate_manifest,
 )
+from .split import (
+    SplitResult,
+    SplitStats,
+    extract_group,
+    group_stratified_split,
+)
 
 __all__ = [
     "ALLOWED_CLASSES",
@@ -33,6 +39,10 @@ __all__ = [
     "COLUMNS",
     "ManifestError",
     "ManifestRow",
+    "SplitResult",
+    "SplitStats",
+    "extract_group",
+    "group_stratified_split",
     "hash_bytes",
     "load_manifest",
     "row_field_names",

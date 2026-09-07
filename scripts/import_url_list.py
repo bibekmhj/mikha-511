@@ -114,7 +114,10 @@ def main(argv: list[str] | None = None) -> int:
     next_int = _next_id(existing)
     ok = http_error = dup = 0
 
-    with httpx.Client(headers={"User-Agent": "Mikha-511/0.1 (research)"}) as client:
+    ua = "Mikha511/0.1 (https://github.com/bibekmhj/mikha-511; bbkmhj06@gmail.com) httpx"
+    with httpx.Client(
+        headers={"User-Agent": ua, "Accept": "image/*,*/*;q=0.8"}, timeout=60.0
+    ) as client:
         for row in rows:
             if row["url"] in existing_urls:
                 dup += 1

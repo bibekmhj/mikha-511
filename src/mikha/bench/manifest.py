@@ -190,19 +190,35 @@ def load_manifest(path: str | Path) -> list[ManifestRow]:
 
 
 def save_manifest(rows: Iterable[ManifestRow], path: str | Path) -> None:
-    """Write ``rows`` to ``path`` in canonical column order.
+    """Write ``rows`` to ``path`` in canonical column order — ATOMICALLY.
 
     Runs :func:`validate_manifest` first; refuses to write an invalid manifest.
+    Writes to a sibling temp file then ``os.replace`` — so an interrupted
+    write (Ctrl+C, crash, disk full) never leaves the on-disk manifest half
+    written. The pre-existing manifest is preserved on failure.
     """
+    import os
+
     rows_list = list(rows)
     validate_manifest(rows_list)
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", newline="", encoding="utf-8") as fh:
-        writer = csv.DictWriter(fh, fieldnames=list(COLUMNS))
-        writer.writeheader()
-        for row in rows_list:
-            writer.writerow(asdict(row))
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    try:
+        with tmp.open("w", newline="", encoding="utf-8") as fh:
+            writer = csv.DictWriter(fh, fieldnames=list(COLUMNS))
+            writer.writeheader()
+            for row in rows_list:
+                writer.writerow(asdict(row))
+        os.replace(tmp, path)  # atomic on POSIX and Windows
+    except BaseException:
+        # BaseException so KeyboardInterrupt also cleans up the temp file.
+        import contextlib
+
+        if tmp.exists():
+            with contextlib.suppress(OSError):
+                tmp.unlink()
+        raise
 
 
 def row_field_names() -> tuple[str, ...]:

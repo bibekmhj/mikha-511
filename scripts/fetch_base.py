@@ -7,14 +7,22 @@ For every row:
 * verify SHA-256 matches ``sha256``;
 * write to ``data/images/<id>.<ext>`` (extension inferred from URL).
 
-Reports OK / MISMATCH / MISSING per row. Never overwrites without --force.
-The network is the only side effect; nothing is committed to git.
+Reports OK / SKIP_EXISTS / MISMATCH / HTTP-ERROR per row.
+Never overwrites without --force. Never modifies the manifest.
+
+Rate-limit handling: retries on HTTP 429/503 with exponential backoff,
+honoring ``Retry-After`` when present. Polite sleep between requests.
+
+Wikimedia's User-Agent policy requires a specific tool name plus contact
+info; requests without it get 403. This client sends a compliant UA.
+See: https://foundation.wikimedia.org/wiki/Policy:User-Agent_policy
 """
 
 from __future__ import annotations
 
 import argparse
 import sys
+import time
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -25,6 +33,16 @@ from mikha.bench import ManifestRow, hash_bytes, load_manifest
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_MANIFEST = REPO_ROOT / "data" / "manifest.csv"
 DEFAULT_OUT = REPO_ROOT / "data" / "images"
+
+# Wikimedia (and many other well-behaved hosts) require a tool-specific UA
+# with a reach-back. Default httpx UA gets 403 on upload.wikimedia.org.
+DEFAULT_UA = "Mikha511/0.1 (https://github.com/bibekmhj/mikha-511; bbkmhj06@gmail.com) httpx"
+DEFAULT_HEADERS = {
+    "User-Agent": DEFAULT_UA,
+    "Accept": "image/*,*/*;q=0.8",
+    "Api-User-Agent": DEFAULT_UA,
+    "From": "bbkmhj06@gmail.com",
+}
 
 
 @dataclass(frozen=True)
@@ -51,16 +69,46 @@ def fetch_one(
     client: httpx.Client,
     force: bool = False,
     timeout: float = 30.0,
+    max_retries: int = 5,
 ) -> FetchResult:
+    """Fetch one manifest row's bytes with retry-on-429/503.
+
+    On HTTP 429 or 503 we back off and retry up to ``max_retries`` extra
+    times, honoring ``Retry-After`` when the server sets it. Other HTTP
+    errors and network errors return a single ``http_error`` result.
+    """
     dst = out_dir / f"{row.id}{_ext_from_url(row.url)}"
     if dst.exists() and not force:
         return FetchResult(row, "skip_exists", str(dst))
 
-    try:
-        response = client.get(row.url, timeout=timeout, follow_redirects=True)
-        response.raise_for_status()
-    except httpx.HTTPError as exc:
-        return FetchResult(row, "http_error", f"{type(exc).__name__}: {exc}")
+    last_err: str | None = None
+    response: httpx.Response | None = None
+
+    for attempt in range(max_retries + 1):
+        try:
+            r = client.get(row.url, timeout=timeout, follow_redirects=True)
+        except httpx.HTTPError as exc:
+            last_err = f"{type(exc).__name__}: {exc}"
+            time.sleep(min(30.0, 2.0**attempt))
+            continue
+
+        if r.status_code in (429, 503):
+            retry_after = r.headers.get("retry-after", "")
+            wait = float(retry_after) if retry_after.isdigit() else min(60.0, 2.0**attempt)
+            last_err = f"HTTP {r.status_code} (attempt {attempt + 1}/{max_retries + 1})"
+            time.sleep(wait)
+            continue
+
+        if r.status_code >= 400:
+            body_preview = r.text[:120].replace("\n", " ")
+            last_err = f"status={r.status_code} body={body_preview!r}"
+            break
+
+        response = r
+        break
+
+    if response is None:
+        return FetchResult(row, "http_error", last_err or "unknown error")
 
     actual = hash_bytes(response.content)
     if actual != row.sha256:
@@ -79,9 +127,29 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--out", default=str(DEFAULT_OUT), help="Output directory for images.")
     ap.add_argument("--force", action="store_true", help="Re-download existing files.")
     ap.add_argument("--dry-run", action="store_true", help="List actions without downloading.")
+    ap.add_argument(
+        "--sleep-ms",
+        type=int,
+        default=1000,
+        help="Polite delay between successful requests (ms). Default 1000.",
+    )
+    ap.add_argument(
+        "--max-retries",
+        type=int,
+        default=5,
+        help="Retry attempts per image on HTTP 429/503 or network errors. Default 5.",
+    )
+    ap.add_argument(
+        "--limit",
+        type=int,
+        default=0,
+        help="If >0, fetch at most this many rows (for smoke-testing). Default 0 = all.",
+    )
     args = ap.parse_args(argv)
 
     rows = load_manifest(args.manifest)
+    if args.limit > 0:
+        rows = rows[: args.limit]
     out_dir = Path(args.out)
 
     if args.dry_run:
@@ -92,11 +160,20 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     results: list[FetchResult] = []
-    with httpx.Client() as client:
-        for row in rows:
-            result = fetch_one(row, out_dir, client=client, force=args.force)
+    with httpx.Client(headers=DEFAULT_HEADERS, timeout=60.0) as client:
+        for i, row in enumerate(rows, 1):
+            result = fetch_one(
+                row, out_dir, client=client, force=args.force, max_retries=args.max_retries
+            )
             results.append(result)
             print(f"[{result.status:12s}] {row.id}  {result.detail}")
+            # Polite delay only after we actually hit the network.
+            if result.status not in ("skip_exists",):
+                time.sleep(args.sleep_ms / 1000.0)
+            if i % 25 == 0:
+                ok_so_far = sum(1 for r in results if r.status == "ok")
+                err_so_far = sum(1 for r in results if r.status == "http_error")
+                print(f"    ─── progress {i}/{len(rows)}  ok={ok_so_far}  err={err_so_far}")
 
     counts = {
         status: sum(1 for r in results if r.status == status)
