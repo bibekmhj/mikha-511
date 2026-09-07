@@ -4,7 +4,7 @@
 
 **Status:** v0.1.0 - first public release. Bench corpus of 593 rows built, reference implementation runnable, baseline evaluation reproduced.
 
-[![DOI](https://zenodo.org/badge/1358776159.svg)](https://doi.org/10.5281/zenodo.22648105)()[![tests](https://img.shields.io/badge/tests-151%20passed-brightgreen)]() [![license](https://img.shields.io/badge/code-Apache--2.0-blue)]() [![data license](https://img.shields.io/badge/labels-CC--BY--4.0-blue)]() [![python](https://img.shields.io/badge/python-3.11%2B-blue)]()
+[![DOI](https://zenodo.org/badge/1358776159.svg)](https://doi.org/10.5281/zenodo.22648105)[![tests](https://img.shields.io/badge/tests-151%20passed-brightgreen)]() [![license](https://img.shields.io/badge/code-Apache--2.0-blue)]() [![data license](https://img.shields.io/badge/labels-CC--BY--4.0-blue)]() [![python](https://img.shields.io/badge/python-3.11%2B-blue)]()
 
 ---
 
