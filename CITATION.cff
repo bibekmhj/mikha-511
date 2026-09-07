@@ -15,8 +15,8 @@ authors:
   - given-names: "Bibek"
     family-names: "Maharjan"
     email: "bbkmhj06@gmail.com"
-version: "0.0.1-scaffold"
-date-released: "2026-09-06"
+version: "0.1.0"
+date-released: "2026-09-07"
 license: "Apache-2.0"
 repository-code: "https://github.com/bibekmhj/mikha-511"
 keywords:

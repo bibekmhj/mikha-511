@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mikha"
-version = "0.0.1"
+version = "0.1.0"
 description = "Open-source reference implementation and degradation-stratified benchmark for flooded-road detection on public traffic-camera imagery."
 readme = "README.md"
 license = { file = "LICENSE" }
@@ -14,7 +14,7 @@ authors = [
 ]
 keywords = ["computer-vision", "flood-detection", "traffic-cameras", "benchmark", "public-safety"]
 classifiers = [
-  "Development Status :: 2 - Pre-Alpha",
+  "Development Status :: 3 - Alpha",
   "Intended Audience :: Science/Research",
   "License :: OSI Approved :: Apache Software License",
   "Programming Language :: Python :: 3.11",
