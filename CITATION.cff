@@ -27,3 +27,7 @@ keywords:
   - "public safety"
   - "benchmark"
   - "dataset"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22648105
+    description: "Concept DOI (all versions)"  

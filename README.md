@@ -2,15 +2,15 @@
 
 > Open-source reference implementation for flooded-road detection on public traffic-camera imagery, released together with the first publicly available degradation-stratified evaluation benchmark for this task.
 
-**Status:** v0.1.0 — first public release. Bench corpus of 593 rows built, reference implementation runnable, baseline evaluation reproduced.
+**Status:** v0.1.0 - first public release. Bench corpus of 593 rows built, reference implementation runnable, baseline evaluation reproduced.
 
-[![tests](https://img.shields.io/badge/tests-151%20passed-brightgreen)]() [![license](https://img.shields.io/badge/code-Apache--2.0-blue)]() [![data license](https://img.shields.io/badge/labels-CC--BY--4.0-blue)]() [![python](https://img.shields.io/badge/python-3.11%2B-blue)]()
+[![DOI](https://zenodo.org/badge/1358776159.svg)](https://doi.org/10.5281/zenodo.22648105)()[![tests](https://img.shields.io/badge/tests-151%20passed-brightgreen)]() [![license](https://img.shields.io/badge/code-Apache--2.0-blue)]() [![data license](https://img.shields.io/badge/labels-CC--BY--4.0-blue)]() [![python](https://img.shields.io/badge/python-3.11%2B-blue)]()
 
 ---
 
 ## Why this exists
 
-Flash flooding is the leading weather-related killer in the United States, and more than half of flood fatalities happen in vehicles that drove onto submerged roads (NWS). Every U.S. state operates a 511 traffic-camera system, and those feeds could in principle be watched during storm events — but no one can watch them all, and existing academic and commercial work reports numbers on clean imagery that don't survive contact with real-world 511 conditions (rain on the lens, night, fog, glare, low-bitrate JPEG artifacts).
+Flash flooding is the leading weather-related killer in the United States, and more than half of flood fatalities happen in vehicles that drove onto submerged roads (NWS). Every U.S. state operates a 511 traffic-camera system, and those feeds could in principle be watched during storm events - but no one can watch them all, and existing academic and commercial work reports numbers on clean imagery that don't survive contact with real-world 511 conditions (rain on the lens, night, fog, glare, low-bitrate JPEG artifacts).
 
 Mikha-511 doesn't try to be the state-of-the-art detector. It ships the piece the field is missing: a **public, degradation-stratified evaluation benchmark**, an **open augmentation library** that produces it, and a **minimal, one-laptop reference implementation** that anyone can run and beat.
 
@@ -50,7 +50,7 @@ flowchart LR
 
 See [`docs/architecture.md`](docs/architecture.md) for the full component walk-through.
 
-## Results — v0.1.0 baseline
+## Results - v0.1.0 baseline
 
 Baseline is off-the-shelf YOLOv8n-seg with COCO weights, scored by `mask_area_frac` (the fraction of the frame occupied by any predicted mask). Test split, 110 images per degradation class, 63 flood + 47 non-flood.
 
@@ -63,7 +63,7 @@ Baseline is off-the-shelf YOLOv8n-seg with COCO weights, scored by `mask_area_fr
 | glare | 110 | 0.125 | 0.063 | 0.084 | 0.143 | 0.41 | 0.872 |
 | jpeg  | 110 | 0.152 | 0.079 | 0.104 | 0.163 | 0.42 | 0.872 |
 
-**How to read this.** AUROC below 0.5 means the score is anti-correlated with the flood label. That is the expected outcome for COCO weights + `mask_area_frac`: non-flood traffic-camera frames contain cars and people (larger COCO masks); flood frames often have covered or blocked roadways (smaller masks). The baseline is intentionally naive — the point of shipping it is to give the community a floor to beat, and to demonstrate that the evaluation harness produces the right decision signal for the fine-tune step planned as follow-up work. See [`docs/results.md`](docs/results.md) for the full discussion.
+**How to read this.** AUROC below 0.5 means the score is anti-correlated with the flood label. That is the expected outcome for COCO weights + `mask_area_frac`: non-flood traffic-camera frames contain cars and people (larger COCO masks); flood frames often have covered or blocked roadways (smaller masks). The baseline is intentionally naive - the point of shipping it is to give the community a floor to beat, and to demonstrate that the evaluation harness produces the right decision signal for the fine-tune step planned as follow-up work. See [`docs/results.md`](docs/results.md) for the full discussion.
 
 ## Quickstart
 
@@ -106,16 +106,16 @@ The `data/manifest.csv` shipped with v0.1.0 contains **593 rows** across four so
 | Ultralytics sample images | 2 | AGPL-3.0 |
 | OpenCV extra / samples | 2 | Apache-2.0 / BSD-3-Clause |
 
-Every row's license was verified individually against the upstream source page — never assumed from a paper's abstract. The repo does **not** redistribute images; each row carries a URL and SHA-256, and `scripts/fetch_base.py` reproduces the base set on demand. Attribution strings are preserved per row.
+Every row's license was verified individually against the upstream source page - never assumed from a paper's abstract. The repo does **not** redistribute images; each row carries a URL and SHA-256, and `scripts/fetch_base.py` reproduces the base set on demand. Attribution strings are preserved per row.
 
 ## Prior art
 
-- **ClearObject "ClearFlood"** — proprietary commercial CV on live road/surveillance feeds. Not open source, no benchmark.
-- **Rice OpenSafe Fusion** (2024) — multi-source situational-awareness fusion for Houston flooding; broader than a single-camera reference.
-- **LSU / Tran-SET USDOT** (2020) — image enhancement + Bayesian filtering on traffic-monitoring cameras; research report, no maintained software.
-- **Real-time anticipatory urban flood warning using CCTV and Page–Hinkley change detection** (ScienceDirect, 2026) — single-camera change-detection algorithm.
-- **V-FloodNet** (2023) — video segmentation for flood quantification; research prototype.
-- **"More eyes on the road"** (Reliability Engineering & System Safety, 2024) — multi-source fusion, not per-camera reference.
+- **ClearObject "ClearFlood"** - proprietary commercial CV on live road/surveillance feeds. Not open source, no benchmark.
+- **Rice OpenSafe Fusion** (2024) - multi-source situational-awareness fusion for Houston flooding; broader than a single-camera reference.
+- **LSU / Tran-SET USDOT** (2020) - image enhancement + Bayesian filtering on traffic-monitoring cameras; research report, no maintained software.
+- **Real-time anticipatory urban flood warning using CCTV and Page–Hinkley change detection** (ScienceDirect, 2026) - single-camera change-detection algorithm.
+- **V-FloodNet** (2023) - video segmentation for flood quantification; research prototype.
+- **"More eyes on the road"** (Reliability Engineering & System Safety, 2024) - multi-source fusion, not per-camera reference.
 
 Mikha-511's contribution is **infrastructural, not algorithmic**: the benchmark, the augmentation library, and a reproducible baseline these systems can be measured against.
 
@@ -135,15 +135,15 @@ Kept deliberately narrow. No multi-source fusion, no hydrological modeling, no K
 
 ## Roadmap
 
-- [x] M0 — repo scaffold, licenses, CI, package structure
-- [x] M1 — PoC: one FL511 camera → pretrained YOLOv8-seg overlay
-- [x] M2 — Mikha-Aug (5 degradations, deterministic, tested)
-- [x] M3 — Manifest schema + fetch/verify tooling + import scripts (EF2013, HydroShare, US-Gov PD list)
-- [x] M4 — Mikha-Bench v0: 593-row corpus + group-aware train/val/test splits
-- [x] M5 — Mikha-Ref v0: detector + K-of-N persistence gate + Platt calibration + FastAPI/HTMX dashboard + SQLite events
-- [x] M6 — Evaluation harness + baseline results table
-- [x] M7 — Docs, results, v0.1.0 release
-- [ ] v0.2 — Fine-tune water-segmentation head on the base set (triggered by M6 baseline AUROC ≪ 0.5); expand HydroShare inclusion
-- [ ] v0.3 — Live 511 held-out evaluation from FL/TX 511 (labels only shipped; images not rehosted)
+- [x] M0 - repo scaffold, licenses, CI, package structure
+- [x] M1 - PoC: one FL511 camera → pretrained YOLOv8-seg overlay
+- [x] M2 - Mikha-Aug (5 degradations, deterministic, tested)
+- [x] M3 - Manifest schema + fetch/verify tooling + import scripts (EF2013, HydroShare, US-Gov PD list)
+- [x] M4 - Mikha-Bench v0: 593-row corpus + group-aware train/val/test splits
+- [x] M5 - Mikha-Ref v0: detector + K-of-N persistence gate + Platt calibration + FastAPI/HTMX dashboard + SQLite events
+- [x] M6 - Evaluation harness + baseline results table
+- [x] M7 - Docs, results, v0.1.0 release
+- [ ] v0.2 - Fine-tune water-segmentation head on the base set (triggered by M6 baseline AUROC ≪ 0.5); expand HydroShare inclusion
+- [ ] v0.3 - Live 511 held-out evaluation from FL/TX 511 (labels only shipped; images not rehosted)
 
 See the project-level plan for the full scope contract.
