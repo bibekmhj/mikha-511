@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mikha-Ref — Live Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/1.9.10/htmx.min.js"
+        integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+        crossorigin="anonymous"></script>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0; font: 14px/1.5 -apple-system, BlinkMacSystemFont, sans-serif;
+         background: #0f1115; color: #e8e8e8; }
+  header { padding: 16px 20px; border-bottom: 1px solid #333;
+           display: flex; justify-content: space-between; align-items: baseline; }
+  h1 { margin: 0; font-size: 18px; font-weight: 600; }
+  header small { color: #888; }
+  main { padding: 20px; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid #222; }
+  th { color: #aaa; font-weight: 500; font-size: 12px; text-transform: uppercase;
+       letter-spacing: 0.05em; }
+  td.ts { font-family: ui-monospace, SFMono-Regular, monospace; color: #999;
+          font-size: 12px; }
+  td.num { text-align: right; font-family: ui-monospace, SFMono-Regular, monospace; }
+  td.tx { text-align: center; color: #f39c12; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 3px;
+           color: white; font-size: 12px; font-weight: 600; }
+  .empty { color: #666; font-style: italic; text-align: center; padding: 24px; }
+  #status { display: inline-block; width: 10px; height: 10px; border-radius: 50%;
+            background: #27ae60; margin-right: 6px; vertical-align: middle; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Mikha-Ref v0.1 <small style="margin-left: 8px;">reference implementation</small></h1>
+  <small><span id="status"></span> auto-refresh every 5s</small>
+</header>
+<main>
+  <table>
+    <thead>
+      <tr>
+        <th>Timestamp (UTC)</th>
+        <th>Camera</th>
+        <th>Decision</th>
+        <th>Confidence</th>
+        <th>Mask area</th>
+        <th>Transition</th>
+      </tr>
+    </thead>
+    <tbody hx-get="/api/events?limit=50"
+           hx-trigger="load, every 5s"
+           hx-swap="innerHTML">
+      <tr><td colspan="6" class="empty">Loading events…</td></tr>
+    </tbody>
+  </table>
+</main>
+</body>
+</html>

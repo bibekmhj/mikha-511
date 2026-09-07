@@ -1,7 +1,12 @@
-# Mikha-511 reference topology.
-# At M0 this only defines the shape of the running system. The `api` service
-# runs the M0 smoke command; a real FastAPI/HTMX dashboard replaces it in M5,
-# and the `poller` service is added in M5 as well.
+# Mikha-Ref v0.1 dev topology.
+#
+# One process, one camera. `docker compose up` builds the image, starts
+# Uvicorn on :8000, and exposes the HTMX dashboard at
+# http://localhost:8000/ . SQLite event log persists in ./data/.
+#
+# Live camera integration (poller loop feeding /api/submit) is the next
+# operational step — the M5 dashboard proves the plumbing without
+# requiring a live 511 feed. Add a `poller` service downstream.
 
 services:
   api:
@@ -9,5 +14,14 @@ services:
     image: mikha-511:dev
     container_name: mikha-api
     restart: unless-stopped
-    # M0: just prove the image works. Replaced by uvicorn in M5.
-    command: ["python", "-c", "import mikha; print(f'mikha {mikha.__version__} ok')"]
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/data
+    environment:
+      - MIKHA_STORE=/data/events.sqlite
+    healthcheck:
+      test: ["CMD-SHELL", "python -c 'import urllib.request,sys; sys.exit(0 if urllib.request.urlopen(\"http://localhost:8000/health\").status==200 else 1)'"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
