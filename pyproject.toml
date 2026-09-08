@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mikha"
-version = "0.2.0"
+version = "0.2.1"
 description = "Open-source reference implementation and degradation-stratified benchmark for flooded-road detection on public traffic-camera imagery."
 readme = "README.md"
 license = { file = "LICENSE" }

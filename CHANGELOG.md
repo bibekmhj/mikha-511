@@ -3,6 +3,44 @@
 All notable changes to Mikha-511 are recorded here.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); this project uses [Semantic Versioning](https://semver.org/).
 
+## [0.2.1] - 2026-09-08
+
+Calibration release. Closes the M5 and M6 plan gaps around Platt scaling and reliability diagrams that never shipped in v0.1.0. No changes to the manifest, splits, model, or training code. The v0.2.0 evaluation still reproduces byte-identically.
+
+### Added
+
+- **`mikha.eval.calibration`** - new module. `expected_calibration_error` (Guo et al. 2017, 10 equal-width bins), `reliability_curve`, `fit_platt`, `apply_platt`. Pure numpy, no torch.
+- **`scripts/run_eval.py`** - new `--calibrate` and `--calibrate-split` flags. When on, the driver runs eval on the calibration split (default `val`), fits Platt per degradation in logit space, applies it to the test scores, and reports ECE before and after.
+- **`results/calibration.png`** is now emitted when `--calibrate` is set. Two panels side by side: raw and Platt reliability diagrams per degradation, with the identity diagonal for reference.
+- **`table1.md`** gains `ECE (raw)` and `ECE (Platt)` columns when calibration is on. `eval.json` gains a `calibration` block per degradation with `ece_raw`, `ece_platt`, `platt_a`, `platt_b`, and the full calibrated score vector.
+- **`docs/calibration.md`** - what the flag does, when to use it, how to read ECE.
+- **`docs/results.md`** - new Calibration section with the v0.2.1 table and the honest read of where Platt helps and where it does not.
+- 14 new tests in `tests/test_calibration.py` and `tests/test_eval_run.py` covering ECE hand-picked cases, reliability curve edge cases, input validation, Platt on logits vs probabilities, and the write_all calibration round-trip. Includes a regression test that fails on the v0.2.0-shipped bug (Platt fit on probabilities) and passes on the v0.2.1 fix.
+
+### Fixed
+
+- Platt scaling in the eval pipeline is now fit on logits, not on probabilities. The v0.2.0-shipped path passed the classifier's sigmoid outputs directly to `PlattScaler.fit`, which stalled gradient descent at `a ~ 1.0, b ~ -0.08` and collapsed every calibrated score into a narrow band around 0.5. That inflated ECE across the board (clean 0.085 -> 0.290 in the first run). v0.2.1 logit-transforms inputs before Platt fit and apply, so `a` converges to a sensible value and ECE moves in the right direction on the worst-calibrated cases.
+
+### v0.2.1 calibration results (see `docs/results.md`)
+
+| Degradation | ECE raw | ECE Platt | Change |
+|---|---:|---:|---:|
+| clean | 0.085 | 0.083 | -0.002 |
+| rain  | 0.190 | 0.137 | -0.053 |
+| fog   | 0.106 | 0.101 | -0.005 |
+| night | 0.114 | 0.069 | -0.045 |
+| glare | 0.080 | 0.128 | +0.048 |
+| jpeg  | 0.077 | 0.097 | +0.020 |
+
+Platt helps most on the worst-calibrated degradations (rain and night), leaves the already-well-calibrated ones essentially unchanged, and slightly worsens two of the six because a 2-parameter global fit on 14-sample-per-bin val cannot beat identity on inputs that are already close to calibrated. Rankings are preserved (Platt is monotone), so AUROC and FAR at fixed recall are unaffected.
+
+### Known limitations
+
+- Val split has 86 samples across 6 degradations, roughly 14 per Platt fit. Individual ECE numbers move by 0.02-0.03 across seeds. Do not over-index on a single run.
+- Platt is a 2-parameter monotone map. It cannot fix miscalibrations that are non-monotone in the raw score. Isotonic regression would fit better on this scale but the plan explicitly named Platt scaling.
+
+---
+
 ## [0.2.0] - 2026-09-07
 
 Fine-tune release. The v0.1.0 baseline was YOLOv8n-seg with COCO weights, scored by `mask_area_frac`. That produced AUROC below 0.5 on every degradation class because COCO segmentation finds cars and people, which are more common in non-flood traffic-camera frames than in flood frames. This release trains a small water classifier on the same 593-row base set and plugs it into the same eval harness. AUROC crosses from anti-signal to strong signal on every class, and the FAR at 90% recall drops from the 0.60-0.92 range down to 0.15-0.43.

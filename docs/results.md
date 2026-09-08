@@ -1,6 +1,6 @@
 # Results
 
-Two runs live in this repo. The v0.1.0 baseline uses off-the-shelf YOLOv8n-seg with COCO weights, scored by `mask_area_frac`. The v0.2.0 fine-tune uses an ImageNet-pretrained MobileNetV3-Small classifier trained on the base set for one afternoon on a MacBook Air. Same 110-image test split for both, same seed, same manifest.
+Two model runs live in this repo, plus a calibration pass on top of the second one. The v0.1.0 baseline uses off-the-shelf YOLOv8n-seg with COCO weights, scored by `mask_area_frac`. The v0.2.0 fine-tune uses an ImageNet-pretrained MobileNetV3-Small classifier trained on the base set for one afternoon on a MacBook Air. v0.2.1 adds Platt scaling of the classifier's probabilities, fit on the val split and applied to the test split. Same 110-image test split for all three, same seed, same manifest.
 
 ## Table 1 - per-degradation
 
@@ -79,6 +79,27 @@ Group leakage from co-located photos. The split is group-aware at the uploader l
 
 Single backbone. MobileNetV3-Small was picked for speed on a laptop. Larger backbones (ResNet-18 is wired in, larger variants are not) may help, but the current numbers already clear the bar so the case for spending more compute is weak until more data exists.
 
+## Calibration (v0.2.1)
+
+The plan called for Platt scaling of the scorer confidence on the val split with calibration curves and ECE reported alongside the table. That never shipped in v0.1.0 and got the machinery wrong the first time in v0.2.0. v0.2.1 fixes it: the eval driver now takes `--calibrate`, which fits a Platt scaler per degradation on the val split (in logit space, not probability space) and applies it to the test scores.
+
+| Degradation | ECE raw | ECE Platt | Change | Platt a | Platt b |
+|---|---:|---:|---:|---:|---:|
+| clean | 0.085 | 0.083 | -0.002 | 0.60 | -0.23 |
+| rain  | 0.190 | 0.137 | -0.053 | 0.57 | -0.53 |
+| fog   | 0.106 | 0.101 | -0.005 | 0.66 | -0.37 |
+| night | 0.114 | 0.069 | -0.045 | 0.65 | -0.19 |
+| glare | 0.080 | 0.128 | +0.048 | 0.58 | -0.23 |
+| jpeg  | 0.077 | 0.097 | +0.020 | 0.60 | -0.25 |
+
+Reproduce: `python scripts/run_eval.py --detector classifier --weights models/finetune_v1/best.pt --threshold 0.5 --calibrate --out results/finetune_v1_cal`. Outputs land in `results/finetune_v1_cal/`, including a `calibration.png` with raw and Platt reliability diagrams side by side.
+
+How to read this. ECE is the equal-width-bin expected calibration error (Guo et al. 2017, 10 bins). Lower is better, 0.0 is perfect calibration. Every Platt `a` sits below 1.0, which means the classifier is systematically overconfident and Platt is softening the logits. That is the usual outcome for BCE-trained classifiers on small training sets. Rankings are preserved because Platt is monotone, so AUROC and FAR at fixed recall are unaffected.
+
+Where Platt helps and where it does not. The two worst-calibrated degradations improve the most (rain drops from 0.190 to 0.137, night drops from 0.114 to 0.069). Clean and fog were already close to their floor, so Platt barely moves them. Glare and jpeg get slightly worse, which is expected: Platt is a two-parameter global fit per degradation, and on a well-calibrated input it cannot beat identity except by luck. The fit is also noisy because the val split has 86 samples split across degradations, roughly 14 per bin. Numbers here move by a few points across seeds. Mean ECE across all six drops from 0.109 to 0.103, so the aggregate direction is right, and the biggest gains show up where they matter.
+
+If you care about individual-degradation calibration more than overall, use the calibrated scorer selectively (rain and night win, others break even at best). If you care about ranking or FAR at fixed recall, calibration is irrelevant and the raw v0.2.0 scores are already the right thing to compare on.
+
 ## Reproducibility
 
 Every number in this document comes from these commands, in this order, on the manifest committed at v0.2.0:
@@ -93,6 +114,12 @@ python scripts/run_eval.py \
     --weights models/finetune_v1/best.pt \
     --threshold 0.5 \
     --out results/finetune_v1                      # v0.2.0 fine-tune result
+python scripts/run_eval.py \
+    --detector classifier \
+    --weights models/finetune_v1/best.pt \
+    --threshold 0.5 \
+    --calibrate \
+    --out results/finetune_v1_cal                  # v0.2.1 with Platt calibration
 ```
 
 Determinism holds because:
