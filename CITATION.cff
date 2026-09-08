@@ -15,7 +15,7 @@ authors:
   - given-names: "Bibek"
     family-names: "Maharjan"
     email: "bbkmhj06@gmail.com"
-version: "0.1.0"
+version: "0.2.0"
 date-released: "2026-09-07"
 license: "Apache-2.0"
 repository-code: "https://github.com/bibekmhj/mikha-511"
@@ -27,7 +27,3 @@ keywords:
   - "public safety"
   - "benchmark"
   - "dataset"
-identifiers:
-  - type: doi
-    value: 10.5281/zenodo.22648105
-    description: "Concept DOI (all versions)"  

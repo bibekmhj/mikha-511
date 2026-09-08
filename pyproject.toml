@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mikha"
-version = "0.1.0"
+version = "0.2.0"
 description = "Open-source reference implementation and degradation-stratified benchmark for flooded-road detection on public traffic-camera imagery."
 readme = "README.md"
 license = { file = "LICENSE" }
@@ -37,9 +37,12 @@ dependencies = [
 
 [project.optional-dependencies]
 model = [
-  # Pulled in only when Mikha-Ref actually needs a model (M5).
+  # Pulled in only when Mikha-Ref actually needs a model (M5), and when the
+  # M8 fine-tune adds torchvision / pyyaml on top.
   "ultralytics>=8.2",
   "torch>=2.2",
+  "torchvision>=0.17",
+  "pyyaml>=6.0",
 ]
 dev = [
   "pytest>=8.0",

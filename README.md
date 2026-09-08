@@ -2,9 +2,9 @@
 
 > Open-source reference implementation for flooded-road detection on public traffic-camera imagery, released together with the first publicly available degradation-stratified evaluation benchmark for this task.
 
-**Status:** v0.1.0 - first public release. Bench corpus of 593 rows built, reference implementation runnable, baseline evaluation reproduced.
+**Status:** v0.2.0 - fine-tune release. 593-row bench corpus, reference implementation runnable, fine-tuned water classifier lifts test AUROC from 0.14-0.23 (COCO baseline) to 0.88-0.94 across all five degradation classes.
 
-[![DOI](https://zenodo.org/badge/1358776159.svg)](https://doi.org/10.5281/zenodo.22648105)[![tests](https://img.shields.io/badge/tests-151%20passed-brightgreen)]() [![license](https://img.shields.io/badge/code-Apache--2.0-blue)]() [![data license](https://img.shields.io/badge/labels-CC--BY--4.0-blue)]() [![python](https://img.shields.io/badge/python-3.11%2B-blue)]()
+[![tests](https://img.shields.io/badge/tests-173%20passed-brightgreen)]() [![license](https://img.shields.io/badge/code-Apache--2.0-blue)]() [![data license](https://img.shields.io/badge/labels-CC--BY--4.0-blue)]() [![python](https://img.shields.io/badge/python-3.11%2B-blue)]()
 
 ---
 
@@ -50,20 +50,26 @@ flowchart LR
 
 See [`docs/architecture.md`](docs/architecture.md) for the full component walk-through.
 
-## Results - v0.1.0 baseline
+## Results
 
-Baseline is off-the-shelf YOLOv8n-seg with COCO weights, scored by `mask_area_frac` (the fraction of the frame occupied by any predicted mask). Test split, 110 images per degradation class, 63 flood + 47 non-flood.
+Same 110-image test split for both rows in each degradation class, same seed, same manifest. The v0.1.0 baseline is off-the-shelf YOLOv8n-seg with COCO weights, scored by `mask_area_frac`. The v0.2.0 fine-tune is an ImageNet-pretrained MobileNetV3-Small classifier trained on the base set in about 25 minutes on a laptop CPU.
 
-| Degradation | N | Precision | Recall | F1 | AUROC | AUPRC | FAR @ 90% Recall |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| clean | 110 | 0.125 | 0.063 | 0.084 | 0.159 | 0.42 | 0.872 |
-| rain  | 110 | 0.206 | 0.111 | 0.144 | 0.232 | 0.45 | 0.915 |
-| fog   | 110 | 0.143 | 0.063 | 0.088 | 0.143 | 0.43 | 0.787 |
-| night | 110 | 0.158 | 0.048 | 0.073 | 0.194 | 0.50 | 0.596 |
-| glare | 110 | 0.125 | 0.063 | 0.084 | 0.143 | 0.41 | 0.872 |
-| jpeg  | 110 | 0.152 | 0.079 | 0.104 | 0.163 | 0.42 | 0.872 |
+| Degradation | N | Model | Precision | Recall | F1 | AUROC | AUPRC | FAR @ 90% Recall |
+|---|---:|---|---:|---:|---:|---:|---:|---:|
+| clean | 110 | YOLOv8n-seg (v0.1.0) | 0.125 | 0.063 | 0.084 | 0.159 | 0.42 | 0.872 |
+| clean | 110 | classifier (v0.2.0)  | 0.833 | 0.873 | 0.853 | 0.923 | 0.95 | 0.277 |
+| rain  | 110 | YOLOv8n-seg (v0.1.0) | 0.206 | 0.111 | 0.144 | 0.232 | 0.45 | 0.915 |
+| rain  | 110 | classifier (v0.2.0)  | 0.685 | 0.968 | 0.803 | 0.939 | 0.96 | 0.149 |
+| fog   | 110 | YOLOv8n-seg (v0.1.0) | 0.143 | 0.063 | 0.088 | 0.143 | 0.43 | 0.787 |
+| fog   | 110 | classifier (v0.2.0)  | 0.778 | 0.889 | 0.830 | 0.901 | 0.94 | 0.426 |
+| night | 110 | YOLOv8n-seg (v0.1.0) | 0.158 | 0.048 | 0.073 | 0.194 | 0.50 | 0.596 |
+| night | 110 | classifier (v0.2.0)  | 0.740 | 0.905 | 0.814 | 0.882 | 0.90 | 0.404 |
+| glare | 110 | YOLOv8n-seg (v0.1.0) | 0.125 | 0.063 | 0.084 | 0.143 | 0.41 | 0.872 |
+| glare | 110 | classifier (v0.2.0)  | 0.824 | 0.889 | 0.855 | 0.926 | 0.96 | 0.277 |
+| jpeg  | 110 | YOLOv8n-seg (v0.1.0) | 0.152 | 0.079 | 0.104 | 0.163 | 0.42 | 0.872 |
+| jpeg  | 110 | classifier (v0.2.0)  | 0.833 | 0.873 | 0.853 | 0.924 | 0.96 | 0.298 |
 
-**How to read this.** AUROC below 0.5 means the score is anti-correlated with the flood label. That is the expected outcome for COCO weights + `mask_area_frac`: non-flood traffic-camera frames contain cars and people (larger COCO masks); flood frames often have covered or blocked roadways (smaller masks). The baseline is intentionally naive - the point of shipping it is to give the community a floor to beat, and to demonstrate that the evaluation harness produces the right decision signal for the fine-tune step planned as follow-up work. See [`docs/results.md`](docs/results.md) for the full discussion.
+**How to read this.** The v0.1.0 baseline had AUROC below 0.5 on every class, which means `mask_area_frac` was pointing the wrong direction: COCO segmentation finds cars and people, which are more common in non-flood traffic-camera frames than in flood frames. The v0.2.0 fine-tune reverses this by training on actual water. AUROC uplifts range from +0.69 (night) to +0.78 (glare). FAR at 90% recall drops from the 0.60-0.92 range down to 0.15-0.43. See [`docs/results.md`](docs/results.md) for the training curve, threats to validity, and reproduction commands.
 
 ## Quickstart
 
@@ -127,7 +133,7 @@ Mikha-511's contribution is **infrastructural, not algorithmic**: the benchmark,
 
 ## Citation
 
-If you use Mikha-511 or Mikha-Bench in your work, please cite via the `CITATION.cff` in this repository. A Zenodo DOI is issued at the v0.1.0 tag.
+If you use Mikha-511 or Mikha-Bench in your work, please cite via the `CITATION.cff` in this repository. Zenodo DOIs are issued at each tagged release (v0.1.0 and v0.2.0).
 
 ## Non-goals
 
@@ -136,14 +142,14 @@ Kept deliberately narrow. No multi-source fusion, no hydrological modeling, no K
 ## Roadmap
 
 - [x] M0 - repo scaffold, licenses, CI, package structure
-- [x] M1 - PoC: one FL511 camera → pretrained YOLOv8-seg overlay
+- [x] M1 - PoC: one FL511 camera to pretrained YOLOv8-seg overlay
 - [x] M2 - Mikha-Aug (5 degradations, deterministic, tested)
 - [x] M3 - Manifest schema + fetch/verify tooling + import scripts (EF2013, HydroShare, US-Gov PD list)
 - [x] M4 - Mikha-Bench v0: 593-row corpus + group-aware train/val/test splits
 - [x] M5 - Mikha-Ref v0: detector + K-of-N persistence gate + Platt calibration + FastAPI/HTMX dashboard + SQLite events
 - [x] M6 - Evaluation harness + baseline results table
 - [x] M7 - Docs, results, v0.1.0 release
-- [ ] v0.2 - Fine-tune water-segmentation head on the base set (triggered by M6 baseline AUROC ≪ 0.5); expand HydroShare inclusion
-- [ ] v0.3 - Live 511 held-out evaluation from FL/TX 511 (labels only shipped; images not rehosted)
+- [x] M8 - Fine-tuned water classifier + v0.2.0 release (clean AUROC 0.923, all-degradation min AUROC 0.882)
+- [ ] v0.3 - Real FL 511 / TX 511 held-out evaluation (labels only shipped; images not rehosted); explore larger backbones if the corpus grows
 
 See the project-level plan for the full scope contract.
