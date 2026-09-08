@@ -25,7 +25,7 @@ from pathlib import Path
 from typing import Any
 
 from mikha.aug import BENCH_TRANSFORMS
-from mikha.bench import ManifestRow, load_manifest
+from mikha.bench import ManifestRow, load_manifest, local_image_path
 
 CLEAN = "clean"
 DEGRADATIONS: tuple[str, ...] = (CLEAN, *BENCH_TRANSFORMS.keys())
@@ -65,12 +65,8 @@ class EvalSample:
 
 
 def _local_path(row: ManifestRow, images_dir: Path) -> Path:
-    """Mirror the extension-inference logic in scripts/fetch_base.py."""
-    lower = row.url.lower()
-    for ext in (".jpg", ".jpeg", ".png"):
-        if lower.endswith(ext):
-            return images_dir / f"{row.id}{ext}"
-    return images_dir / f"{row.id}.jpg"
+    """Thin wrapper preserved for internal callers; delegates to the shared helper."""
+    return local_image_path(row, images_dir)
 
 
 def load_splits(splits_path: str | Path) -> dict[str, set[str]]:

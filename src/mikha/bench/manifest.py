@@ -224,3 +224,46 @@ def save_manifest(rows: Iterable[ManifestRow], path: str | Path) -> None:
 def row_field_names() -> tuple[str, ...]:
     """Introspection helper: canonical row field names in declaration order."""
     return tuple(f.name for f in fields(ManifestRow))
+
+
+# --- URL → on-disk filename resolution ---------------------------------------
+#
+# ``scripts/fetch_base.py`` writes every image as ``{row.id}{ext}`` under
+# ``data/images/`` — ASCII-only, one file per row, deterministic. Callers
+# that need to READ an image back MUST use the helpers below rather than
+# re-deriving the filename from ``row.url`` themselves — the URL's last
+# path segment can be URL-encoded (e.g. ``Gy%C5%91r_flood%2C_...``) or
+# contain Unicode that some filesystems normalize differently, so any
+# ad-hoc derivation drifts from ``fetch_base.py`` and breaks silently.
+
+_IMAGE_EXTS = (".jpg", ".jpeg", ".png")
+
+
+def local_image_ext(url: str) -> str:
+    """Pick the on-disk file extension for a manifest URL.
+
+    Mirrors ``scripts/fetch_base.py`` exactly:
+
+    * ``.jpg`` / ``.jpeg`` / ``.png`` (case-insensitive) → that extension.
+    * Anything else → ``.jpg`` (default; 511 imagery is overwhelmingly JPEG).
+
+    The URL is inspected case-insensitively; URL-encoding of the last
+    path segment does not affect the result because these ASCII-only
+    extensions never contain percent-escapes.
+    """
+    lower = url.lower()
+    for ext in _IMAGE_EXTS:
+        if lower.endswith(ext):
+            return ext
+    return ".jpg"
+
+
+def local_image_path(row: ManifestRow, images_dir: str | Path) -> Path:
+    """Return the on-disk path for a manifest row's image.
+
+    The naming rule is ``{row.id}{ext}`` — deliberately id-based so it
+    never depends on the URL's last segment (which may be URL-encoded
+    Unicode). This matches ``scripts/fetch_base.py``'s writer; drift
+    between the two is a bug in whichever side is out of step.
+    """
+    return Path(images_dir) / f"{row.id}{local_image_ext(row.url)}"
