@@ -167,3 +167,47 @@ def test_write_all_produces_table_and_json(tmp_path: Path) -> None:
     assert payload["detector"] == "mean-brightness"
     assert "clean" in payload["per_degradation"]
     assert payload["per_degradation"]["clean"]["n_samples"] == 12
+
+
+def test_write_all_with_calibration_adds_ece_and_calibration_json(tmp_path: Path) -> None:
+    """When a calibration dict is passed, ECE lands in table1.md and eval.json."""
+    from mikha.eval.report import CalibrationBlock
+
+    m, s, imgs = _bootstrap(tmp_path)
+    result = evaluate(
+        lambda img: float(img.mean()) / 255.0,
+        manifest_path=m,
+        splits_path=s,
+        images_dir=imgs,
+        which_splits=("test",),
+        degradations=(CLEAN,),
+    )
+    # Synthetic calibration block: 12 samples, made-up numbers.
+    n = result.per_degradation[CLEAN].n_samples
+    block = CalibrationBlock(
+        ece_before=0.42,
+        ece_after=0.07,
+        platt_a=3.1,
+        platt_b=-1.4,
+        calibrated_scores=np.full(n, 0.5),
+    )
+    out = tmp_path / "results"
+    written = write_all(result, out, detector_name="mean-brightness", calibration={CLEAN: block})
+
+    table = (out / "table1.md").read_text()
+    assert "ECE (raw)" in table
+    assert "ECE (Platt)" in table
+    assert "0.420" in table
+    assert "0.070" in table
+
+    payload = json.loads((out / "eval.json").read_text())
+    cal = payload["per_degradation"][CLEAN]["calibration"]
+    assert cal["ece_raw"] == pytest.approx(0.42)
+    assert cal["ece_platt"] == pytest.approx(0.07)
+    assert cal["platt_a"] == pytest.approx(3.1)
+    assert cal["platt_b"] == pytest.approx(-1.4)
+    assert len(cal["calibrated_scores"]) == n
+
+    # calibration.png only if matplotlib is available in this environment.
+    if "calibration_png" in written:
+        assert Path(written["calibration_png"]).exists()

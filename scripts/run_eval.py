@@ -24,14 +24,61 @@ import argparse
 import sys
 from pathlib import Path
 
-from mikha.eval import evaluate, sample_count, write_all
+from mikha.eval import (
+    apply_platt,
+    evaluate,
+    expected_calibration_error,
+    fit_platt,
+    sample_count,
+    write_all,
+)
 from mikha.eval.corpus import DEGRADATIONS
+from mikha.eval.report import CalibrationBlock
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_MANIFEST = REPO_ROOT / "data" / "manifest.csv"
 DEFAULT_SPLITS = REPO_ROOT / "bench" / "splits.json"
 DEFAULT_IMAGES = REPO_ROOT / "data" / "images"
 DEFAULT_OUT = REPO_ROOT / "results"
+
+
+def _fit_calibration(cal_result, test_result) -> dict:  # noqa: ANN001
+    """Fit Platt on cal_result per degradation, apply to test_result.
+
+    Returns ``{degradation_name: CalibrationBlock}``. Degradations with
+    fewer than 2 positives or 2 negatives in the calibration split are
+    skipped (Platt cannot be fit on a degenerate class balance).
+    """
+    blocks: dict[str, CalibrationBlock] = {}
+    for name, cr in cal_result.per_degradation.items():
+        if name not in test_result.per_degradation:
+            continue
+        tr = test_result.per_degradation[name]
+
+        n_pos = int(cr.labels.sum())
+        n_neg = int(cr.labels.size - n_pos)
+        if n_pos < 2 or n_neg < 2:
+            print(
+                f"[warn] skipping Platt for {name}: cal split has {n_pos} flood / {n_neg} nonflood",
+                file=sys.stderr,
+            )
+            continue
+
+        scaler = fit_platt(cr.scores, cr.labels)
+        params = scaler.params
+        cal_scores_test = apply_platt(tr.scores, scaler)
+
+        ece_before = expected_calibration_error(tr.scores, tr.labels)
+        ece_after = expected_calibration_error(cal_scores_test, tr.labels)
+
+        blocks[name] = CalibrationBlock(
+            ece_before=float(ece_before),
+            ece_after=float(ece_after),
+            platt_a=float(params.a),
+            platt_b=float(params.b),
+            calibrated_scores=cal_scores_test,
+        )
+    return blocks
 
 
 def _score_from_yolo():
@@ -104,6 +151,20 @@ def main(argv: list[str] | None = None) -> int:
         default="auto",
         help="Torch device for --detector classifier: auto (default), cpu, cuda, mps.",
     )
+    ap.add_argument(
+        "--calibrate",
+        action="store_true",
+        help=(
+            "Fit Platt scaling on --calibrate-split (default 'val') per degradation, "
+            "then apply to the eval splits and report ECE before + after. "
+            "Adds results/calibration.png and ECE columns to table1.md and eval.json."
+        ),
+    )
+    ap.add_argument(
+        "--calibrate-split",
+        default="val",
+        help="Which split to fit Platt scaling on. Default: val.",
+    )
     args = ap.parse_args(argv)
 
     limit = args.limit_per_class if args.limit_per_class > 0 else None
@@ -170,16 +231,48 @@ def main(argv: list[str] | None = None) -> int:
         progress=_progress,
     )
 
-    written = write_all(result, args.out, detector_name=detector_name)
+    calibration_blocks = None
+    if args.calibrate:
+        if args.calibrate_split in args.splits:
+            print(
+                f"[warn] --calibrate-split '{args.calibrate_split}' is also in --splits; "
+                f"fitting Platt on the same rows we score is optimistic. Consider "
+                f"--splits test --calibrate-split val instead.",
+                file=sys.stderr,
+            )
+        print(f"[eval] fitting Platt scaling on split={args.calibrate_split}")
+        cal_result = evaluate(
+            score_fn,
+            manifest_path=args.manifest,
+            splits_path=args.splits_json,
+            images_dir=args.images,
+            which_splits=(args.calibrate_split,),
+            degradations=args.degradations,
+            severity=args.severity,
+            seed=args.seed,
+            limit_per_class=limit,
+            default_threshold=args.threshold,
+            target_recall=args.target_recall,
+            on_load_error=_on_load_error,
+        )
+        calibration_blocks = _fit_calibration(cal_result, result)
+
+    written = write_all(
+        result, args.out, detector_name=detector_name, calibration=calibration_blocks
+    )
 
     print("\n=== Results ===")
     for name, r in result.per_degradation.items():
         m = r.metrics_at_default
-        print(
+        line = (
             f"  {name:10s}  n={r.n_samples:4d}  P={m.precision:.3f}  "
             f"R={m.recall:.3f}  F1={m.f1:.3f}  AUROC={r.auroc:.3f}  "
             f"FAR@{args.target_recall:.0%}={r.far_at_recall:.3f}"
         )
+        if calibration_blocks and name in calibration_blocks:
+            cb = calibration_blocks[name]
+            line += f"  ECE:{cb.ece_before:.3f}->{cb.ece_after:.3f}"
+        print(line)
     if load_errors:
         print(f"\n[eval] {len(load_errors)} load errors (first 5):")
         for row_id, err in load_errors[:5]:
