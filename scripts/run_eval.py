@@ -46,6 +46,22 @@ def _score_from_yolo():
     return score, "yolov8n-seg (COCO weights, mask_area_frac score)"
 
 
+def _score_from_classifier(weights_path: str, device: str):
+    """Return a scoring callable that lazy-loads a fine-tuned water classifier."""
+    from mikha.ref.classifier import WaterClassifier
+
+    clf = WaterClassifier(weights_path, device=device)
+
+    def score(image) -> float:
+        return float(clf.score(image))
+
+    name = (
+        f"water-classifier ({clf.backbone}, ImageNet-pretrained, fine-tuned; "
+        f"weights={weights_path})"
+    )
+    return score, name
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description="Mikha-Bench baseline evaluation.")
     ap.add_argument("--manifest", default=str(DEFAULT_MANIFEST))
@@ -69,6 +85,25 @@ def main(argv: list[str] | None = None) -> int:
     )
     ap.add_argument("--threshold", type=float, default=0.05)
     ap.add_argument("--target-recall", type=float, default=0.9)
+    ap.add_argument(
+        "--detector",
+        choices=("yolo", "classifier"),
+        default="yolo",
+        help=(
+            "'yolo' = YOLOv8-seg mask_area_frac (v0.1.0 baseline). "
+            "'classifier' = fine-tuned water classifier from --weights (M8/v0.2)."
+        ),
+    )
+    ap.add_argument(
+        "--weights",
+        default=None,
+        help="Checkpoint path for --detector classifier (e.g. models/finetune_v1/best.pt).",
+    )
+    ap.add_argument(
+        "--device",
+        default="auto",
+        help="Torch device for --detector classifier: auto (default), cpu, cuda, mps.",
+    )
     args = ap.parse_args(argv)
 
     limit = args.limit_per_class if args.limit_per_class > 0 else None
@@ -90,10 +125,22 @@ def main(argv: list[str] | None = None) -> int:
         )
 
     try:
-        score_fn, detector_name = _score_from_yolo()
+        if args.detector == "classifier":
+            if not args.weights:
+                print(
+                    "[fatal] --detector classifier requires --weights <checkpoint.pt>",
+                    file=sys.stderr,
+                )
+                return 2
+            score_fn, detector_name = _score_from_classifier(args.weights, args.device)
+        else:
+            score_fn, detector_name = _score_from_yolo()
     except ImportError as exc:
         print(f"[fatal] detector deps missing: {exc}", file=sys.stderr)
         print("        pip install -e '.[model]'", file=sys.stderr)
+        return 2
+    except FileNotFoundError as exc:
+        print(f"[fatal] {exc}", file=sys.stderr)
         return 2
 
     print(f"[eval] detector: {detector_name}")

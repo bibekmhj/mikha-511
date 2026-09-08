@@ -1,0 +1,41 @@
+# Mikha-511 M8 (v0.2) fine-tune experiment.
+# Every knob TrainConfig reads. Keys map 1:1 to dataclass fields.
+# CLI flags of the same name override any value listed here.
+
+# data — bound to the v0.1.0 manifest + splits
+manifest_path: data/manifest.csv
+splits_path: bench/splits.json
+images_dir: data/images
+train_split: train
+val_split: val
+
+# model
+backbone: mobilenet_v3_small     # or resnet18
+pretrained: true
+image_size: 224
+
+# optimizer / schedule
+epochs: 20
+batch_size: 16
+num_workers: 2
+lr: 3.0e-4
+weight_decay: 1.0e-4
+warmup_epochs: 1
+
+# on-the-fly training augmentation (uses mikha.aug's 5 canonical transforms)
+aug_prob: 0.5
+aug_severity: 0.65
+allowed_augs: [rain, fog, night, glare, jpeg]
+
+# reproducibility / bookkeeping
+seed: 1234
+device: auto                     # cuda > mps > cpu
+out_dir: models/finetune_v1
+
+# eval knobs (mirrors run_eval.py defaults so numbers are comparable)
+target_recall: 0.9
+default_threshold: 0.5
+
+# runtime
+log_every: 25
+early_stop_patience: 5
