@@ -1,5 +1,8 @@
 # Mikha-511
-
+#
+# [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24611747.svg)](https://doi.org/10.5281/zenodo.24611747)
+# [![Weights](https://zenodo.org/badge/DOI/10.5281/zenodo.24612100.svg)](https://doi.org/10.5281/zenodo.24612100)
+#
 > Open-source reference implementation for flooded-road detection on public traffic-camera imagery, released together with the first publicly available degradation-stratified evaluation benchmark for this task.
 
 **Status:** v0.2.0 - fine-tune release. 593-row bench corpus, reference implementation runnable, fine-tuned water classifier lifts test AUROC from 0.14-0.23 (COCO baseline) to 0.88-0.94 across all five degradation classes.
