@@ -36,15 +36,19 @@ def _load_mod():
 def test_load_labels_filters_to_flood_and_nonflood(tmp_path: Path) -> None:
     mod = _load_mod()
     p = tmp_path / "labels.json"
-    p.write_text(json.dumps({
-        "meta": {"labeling_protocol_version": 1},
-        "labels": {
-            "a": {"image_class": "flood"},
-            "b": {"image_class": "nonflood"},
-            "c": {"image_class": "uncertain"},
-            "d": {"image_class": "skip"},
-        },
-    }))
+    p.write_text(
+        json.dumps(
+            {
+                "meta": {"labeling_protocol_version": 1},
+                "labels": {
+                    "a": {"image_class": "flood"},
+                    "b": {"image_class": "nonflood"},
+                    "c": {"image_class": "uncertain"},
+                    "d": {"image_class": "skip"},
+                },
+            }
+        )
+    )
     assert mod.load_labels(p) == {"a": "flood", "b": "nonflood"}
 
 
