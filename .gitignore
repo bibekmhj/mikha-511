@@ -26,7 +26,7 @@ coverage.xml
 .DS_Store
 *.swp
 
-# Local data — never committed
+# Local data - never committed
 # (manifest is committed; the actual images it points to are not)
 data/images/
 data/cache/
@@ -37,6 +37,12 @@ bench/images/
 *.jpeg
 *.png
 *.mp4
+
+# Live 511 held-out corpus (M10 / v0.3)
+# Per-operator ToS: images stay local, manifest optional per operator
+data/live_511/*/
+data/live_511/manifest.csv
+configs/live_cameras.local.yaml
 
 # Exceptions: documentation figures and gallery samples are allowed
 !docs/**/*.png
@@ -57,3 +63,9 @@ results/scratch/
 *.sqlite
 *.sqlite-journal
 *.db
+configs/*.local.yaml
+
+# M10/M11 ephemera (do not ship)
+logs/
+*.tar.gz
+results/live_predictions*.json
