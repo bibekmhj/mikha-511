@@ -44,6 +44,10 @@ model = [
   "torchvision>=0.17",
   "pyyaml>=6.0",
 ]
+# Note: the M10.1 HLS collector path (source_kind: hls, DelDOT etc.)
+# needs system `ffmpeg` on PATH. It is NOT a pip package - install via
+# `brew install ffmpeg` on macOS or `apt install ffmpeg` on Debian.
+# See data/live_511/README.md for the setup section.
 dev = [
   "pytest>=8.0",
   "pytest-cov>=5.0",
