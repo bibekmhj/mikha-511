@@ -6,10 +6,11 @@ under their own licenses.
 
 ## Files
 
-- `manifest.csv` — the base-image manifest. One row per image.
-- `gov_pd_urls.tsv` — hand-curated NOAA / USGS / FEMA / other US-Gov public-domain URL list, consumed by `scripts/import_url_list.py`.
-- `images/` — populated locally by `scripts/fetch_base.py`. Gitignored.
-- `README.md` — this file.
+- `manifest.csv` - the base-image manifest. One row per image.
+- `gov_pd_urls.tsv` - hand-curated NOAA / USGS / FEMA / other US-Gov public-domain URL list, consumed by `scripts/import_url_list.py`.
+- `images/` - populated locally by `scripts/fetch_base.py`. Gitignored.
+- `live_511/` - separate live-snapshot corpus (M10, held-out validation). Different schema, images never redistributed. See `live_511/README.md`.
+- `README.md` - this file.
 
 ## Schema (`manifest.csv`)
 

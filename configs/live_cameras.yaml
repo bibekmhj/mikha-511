@@ -1,0 +1,68 @@
+# Live 511 snapshot poller config (M10 / v0.3 scaffold).
+#
+# Each entry names one publicly viewable snapshot URL. The collector
+# fetches these on the interval below, hashes the bytes, writes them to
+# data/live_511/<camera_id>/<file>, and appends a row to
+# data/live_511/manifest.csv.
+#
+# Images are NOT redistributed by this repo. Per plan section 4:
+# "Store hashes + URLs; ship labels only; run eval locally."
+#
+# Add your own cameras below. Empty seed on purpose -- FL511 / TX511
+# camera IDs and URLs change over time and the operator's ToS applies
+# per snapshot. See data/live_511/README.md for the vetting checklist.
+
+# Poll cadence (seconds). 30 is the ~norm for FL511 during storm events.
+interval_seconds: 30
+
+# Time bucket used to group frames into a series_id (seconds). 3600 = 1h.
+series_bucket_seconds: 3600
+
+# HTTP request timeout (seconds).
+timeout_seconds: 15
+
+# User-Agent applied to every request. Follows the same "identify yourself
+# so the operator can contact you" convention as the Wikimedia downloader.
+user_agent: "Mikha511-Live/0.3 (https://github.com/bibekmhj/mikha-511; bbkmhj06@gmail.com) httpx"
+
+# Where to write the local manifest + images.
+manifest_path: "data/live_511/manifest.csv"
+images_root: "data/live_511"
+
+# List of cameras. Populate on your own machine after ToS review.
+# Example (commented) shape:
+#
+# cameras:
+#   - camera_id: fl511_00_MDX_SR874_000
+#     source: fl511
+#     url: "https://cctvinfo.dot.state.fl.us/image_pull/00_MDX_SR874_000.jpg"
+#     notes: "Miami-Dade SR-874 near NW 22 St; prone to nuisance flooding"
+cameras: []
+
+# --- source_kind reference ---
+#
+# Each camera has a source_kind that tells the collector how to fetch
+# a frame. Two are supported:
+#
+#   source_kind: jpg   (default; original FL511 behavior)
+#     One HTTP GET on a direct .jpg URL. No system dependency.
+#
+#   source_kind: hls   (added in M10.1 for DelDOT and similar operators)
+#     One ffmpeg frame-grab from an HLS/M3U8 live stream. Requires
+#     system ffmpeg on PATH. See data/live_511/README.md for install.
+#
+# Example entries you would put under `cameras:` on your local
+# (gitignored) copy of this file:
+#
+# cameras:
+#   - camera_id: fl511_miami_i195_alton
+#     source: fl511
+#     source_kind: jpg
+#     url: "https://images-dis.divas.cloud/DGI/chan-253_h.jpg"
+#     notes: "I-195 at Alton Rd, Miami Beach. Documented flooded June 2024."
+#
+#   - camera_id: deldot_scam013_dewey_towers
+#     source: deldot
+#     source_kind: hls
+#     url: "http://video.deldot.gov:1935/live/SCAM013.stream/playlist.m3u8"
+#     notes: "DE 1 at Towers Rd, Dewey Beach. Northern endpoint of Aug 2025 flood closure (WBOC)."
