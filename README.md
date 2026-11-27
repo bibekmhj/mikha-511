@@ -4,7 +4,7 @@
 
 **Status:** v0.2.0 - fine-tune release. 593-row bench corpus, reference implementation runnable, fine-tuned water classifier lifts test AUROC from 0.14-0.23 (COCO baseline) to 0.88-0.94 across all five degradation classes.
 
-[![DOI](https://zenodo.org/badge/1358776159.svg)](https://doi.org/10.5281/zenodo.22648105) [![tests](https://img.shields.io/badge/tests-173%20passed-brightgreen)]() [![license](https://img.shields.io/badge/code-Apache--2.0-blue)]() [![data license](https://img.shields.io/badge/labels-CC--BY--4.0-blue)]() [![python](https://img.shields.io/badge/python-3.11%2B-blue)]()
+[![tests](https://img.shields.io/badge/tests-173%20passed-brightgreen)]() [![license](https://img.shields.io/badge/code-Apache--2.0-blue)]() [![data license](https://img.shields.io/badge/labels-CC--BY--4.0-blue)]() [![python](https://img.shields.io/badge/python-3.11%2B-blue)]()
 
 ---
 
@@ -150,6 +150,9 @@ Kept deliberately narrow. No multi-source fusion, no hydrological modeling, no K
 - [x] M6 - Evaluation harness + baseline results table
 - [x] M7 - Docs, results, v0.1.0 release
 - [x] M8 - Fine-tuned water classifier + v0.2.0 release (clean AUROC 0.923, all-degradation min AUROC 0.882)
-- [ ] v0.3 - Real FL 511 / TX 511 held-out evaluation (labels only shipped; images not rehosted); explore larger backbones if the corpus grows
+- [x] M9 - Platt calibration + ECE + reliability diagram (v0.2.1)
+- [ ] M10 - Live 511 held-out corpus tooling (data collector + hand-labeler + loader; images stay local, labels ship)
+- [ ] M11 - Persistence-gate ablation on the live corpus (plan section 8: baseline vs proposed)
+- [ ] v0.3 release once M10 + M11 land
 
 See the project-level plan for the full scope contract.
