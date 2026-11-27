@@ -1,0 +1,137 @@
+{
+  "overall": {
+    "n_total": 265,
+    "n_flood": 124,
+    "n_nonflood": 141,
+    "baseline": {
+      "tp": 122,
+      "fp": 132,
+      "fn": 2,
+      "tn": 9,
+      "precision": 0.48031496062992124,
+      "recall": 0.9838709677419355,
+      "f1": 0.6455026455026455,
+      "far_at_90_recall": 0.8156028368794326,
+      "far_threshold": 0.6644906997680664
+    },
+    "gate": {
+      "tp": 120,
+      "fp": 141,
+      "fn": 4,
+      "tn": 0,
+      "precision": 0.45977011494252873,
+      "recall": 0.967741935483871,
+      "f1": 0.6233766233766235,
+      "far_at_90_recall": 0.9645390070921985,
+      "far_threshold": 0.65
+    }
+  },
+  "deldot_scam013_dewey_towers": {
+    "n_total": 70,
+    "n_flood": 29,
+    "n_nonflood": 41,
+    "baseline": {
+      "tp": 29,
+      "fp": 41,
+      "fn": 0,
+      "tn": 0,
+      "precision": 0.4142857142857143,
+      "recall": 1.0,
+      "f1": 0.5858585858585859,
+      "far_at_90_recall": 1.0,
+      "far_threshold": 0.6505843997001648
+    },
+    "gate": {
+      "tp": 28,
+      "fp": 41,
+      "fn": 1,
+      "tn": 0,
+      "precision": 0.4057971014492754,
+      "recall": 0.9655172413793104,
+      "f1": 0.5714285714285714,
+      "far_at_90_recall": 1.0,
+      "far_threshold": 0.65
+    }
+  },
+  "deldot_scam098_indian_river_inlet_n": {
+    "n_total": 93,
+    "n_flood": 57,
+    "n_nonflood": 36,
+    "baseline": {
+      "tp": 56,
+      "fp": 32,
+      "fn": 1,
+      "tn": 4,
+      "precision": 0.6363636363636364,
+      "recall": 0.9824561403508771,
+      "f1": 0.7724137931034484,
+      "far_at_90_recall": 0.6666666666666666,
+      "far_threshold": 0.6569315791130066
+    },
+    "gate": {
+      "tp": 56,
+      "fp": 36,
+      "fn": 1,
+      "tn": 0,
+      "precision": 0.6086956521739131,
+      "recall": 0.9824561403508771,
+      "f1": 0.7516778523489932,
+      "far_at_90_recall": 0.9166666666666666,
+      "far_threshold": 0.65
+    }
+  },
+  "deldot_scam169_event_20261126": {
+    "n_total": 65,
+    "n_flood": 29,
+    "n_nonflood": 36,
+    "baseline": {
+      "tp": 29,
+      "fp": 32,
+      "fn": 0,
+      "tn": 4,
+      "precision": 0.47540983606557374,
+      "recall": 1.0,
+      "f1": 0.6444444444444445,
+      "far_at_90_recall": 0.7222222222222222,
+      "far_threshold": 0.7222334742546082
+    },
+    "gate": {
+      "tp": 28,
+      "fp": 36,
+      "fn": 1,
+      "tn": 0,
+      "precision": 0.4375,
+      "recall": 0.9655172413793104,
+      "f1": 0.6021505376344085,
+      "far_at_90_recall": 0.9444444444444444,
+      "far_threshold": 0.75
+    }
+  },
+  "deldot_pcam4061_event_20261126": {
+    "n_total": 37,
+    "n_flood": 9,
+    "n_nonflood": 28,
+    "baseline": {
+      "tp": 8,
+      "fp": 27,
+      "fn": 1,
+      "tn": 1,
+      "precision": 0.22857142857142856,
+      "recall": 0.8888888888888888,
+      "f1": 0.3636363636363636,
+      "far_at_90_recall": 1.0,
+      "far_threshold": 0.40981099009513855
+    },
+    "gate": {
+      "tp": 8,
+      "fp": 28,
+      "fn": 1,
+      "tn": 0,
+      "precision": 0.2222222222222222,
+      "recall": 0.8888888888888888,
+      "f1": 0.3555555555555555,
+      "far_at_90_recall": NaN,
+      "far_threshold": NaN
+    }
+  }
+}

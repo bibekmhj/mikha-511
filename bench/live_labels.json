@@ -1,0 +1,4232 @@
+{
+  "meta": {
+    "last_saved_at": "2026-11-27T16:40:19Z",
+    "labeling_protocol_version": 1
+  },
+  "labels": {
+    "live-deldot_kcam111_bowers_beach-20260927T141715": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:08:45Z",
+      "notes": ""
+    },
+    "live-deldot_kcam111_bowers_beach-20260927T142257": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:08:51Z",
+      "notes": ""
+    },
+    "live-deldot_kcam111_bowers_beach-20260927T143009": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:08:56Z",
+      "notes": ""
+    },
+    "live-deldot_kcam111_bowers_beach-20260927T143707": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:08:59Z",
+      "notes": ""
+    },
+    "live-deldot_kcam111_bowers_beach-20260927T144314": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:09:01Z",
+      "notes": ""
+    },
+    "live-deldot_kcam111_bowers_beach-20260927T144940": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:09:03Z",
+      "notes": ""
+    },
+    "live-deldot_kcam111_bowers_beach-20260927T145620": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:09:06Z",
+      "notes": ""
+    },
+    "live-deldot_kcam111_bowers_beach-20260927T150300": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:09:08Z",
+      "notes": ""
+    },
+    "live-deldot_kcam111_bowers_beach-20260927T150925": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:09:10Z",
+      "notes": ""
+    },
+    "live-deldot_kcam111_bowers_beach-20260927T151521": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:09:12Z",
+      "notes": ""
+    },
+    "live-deldot_kcam111_bowers_beach-20260927T152114": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:09:15Z",
+      "notes": ""
+    },
+    "live-deldot_kcam111_bowers_beach-20260927T152710": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:09:18Z",
+      "notes": ""
+    },
+    "live-deldot_kcam111_bowers_beach-20260927T153315": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:09:20Z",
+      "notes": ""
+    },
+    "live-deldot_kcam111_bowers_beach-20260927T153905": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:09:23Z",
+      "notes": ""
+    },
+    "live-deldot_kcam111_bowers_beach-20260927T154525": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:09:25Z",
+      "notes": ""
+    },
+    "live-deldot_kcam111_bowers_beach-20260927T155215": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:09:27Z",
+      "notes": ""
+    },
+    "live-deldot_kcam111_bowers_beach-20260927T155855": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:09:30Z",
+      "notes": ""
+    },
+    "live-deldot_kcam111_bowers_beach-20260927T160544": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:09:32Z",
+      "notes": ""
+    },
+    "live-deldot_kcam111_bowers_beach-20260927T161224": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:09:35Z",
+      "notes": ""
+    },
+    "live-deldot_kcam111_bowers_beach-20260927T161859": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:09:37Z",
+      "notes": ""
+    },
+    "live-deldot_kcam111_bowers_beach-20260927T162626": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:09:39Z",
+      "notes": ""
+    },
+    "live-deldot_kcam111_bowers_beach-20260927T163251": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:09:41Z",
+      "notes": ""
+    },
+    "live-deldot_kcam111_bowers_beach-20260927T163947": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:09:44Z",
+      "notes": ""
+    },
+    "live-deldot_kcam111_bowers_beach-20260927T164657": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:09:46Z",
+      "notes": ""
+    },
+    "live-deldot_ncam054_i495_brandywine-20260927T141746": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:05:14Z",
+      "notes": ""
+    },
+    "live-deldot_ncam054_i495_brandywine-20260927T142329": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:05:17Z",
+      "notes": ""
+    },
+    "live-deldot_ncam054_i495_brandywine-20260927T143004": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:05:23Z",
+      "notes": ""
+    },
+    "live-deldot_ncam054_i495_brandywine-20260927T143704": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:05:25Z",
+      "notes": ""
+    },
+    "live-deldot_ncam054_i495_brandywine-20260927T144312": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:05:30Z",
+      "notes": ""
+    },
+    "live-deldot_ncam054_i495_brandywine-20260927T144938": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:05:35Z",
+      "notes": ""
+    },
+    "live-deldot_ncam054_i495_brandywine-20260927T145618": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:05:36Z",
+      "notes": ""
+    },
+    "live-deldot_ncam054_i495_brandywine-20260927T150331": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:05:38Z",
+      "notes": ""
+    },
+    "live-deldot_ncam054_i495_brandywine-20260927T150956": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:05:41Z",
+      "notes": ""
+    },
+    "live-deldot_ncam054_i495_brandywine-20260927T151631": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:05:43Z",
+      "notes": ""
+    },
+    "live-deldot_ncam054_i495_brandywine-20260927T152227": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:05:45Z",
+      "notes": ""
+    },
+    "live-deldot_ncam054_i495_brandywine-20260927T152850": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:05:48Z",
+      "notes": ""
+    },
+    "live-deldot_ncam054_i495_brandywine-20260927T153452": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:05:51Z",
+      "notes": ""
+    },
+    "live-deldot_ncam054_i495_brandywine-20260927T154133": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:05:54Z",
+      "notes": ""
+    },
+    "live-deldot_ncam054_i495_brandywine-20260927T154828": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:05:57Z",
+      "notes": ""
+    },
+    "live-deldot_ncam054_i495_brandywine-20260927T155538": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:05:59Z",
+      "notes": ""
+    },
+    "live-deldot_ncam054_i495_brandywine-20260927T160217": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:06:07Z",
+      "notes": ""
+    },
+    "live-deldot_ncam054_i495_brandywine-20260927T160921": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:06:10Z",
+      "notes": ""
+    },
+    "live-deldot_ncam054_i495_brandywine-20260927T161530": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:06:11Z",
+      "notes": ""
+    },
+    "live-deldot_ncam054_i495_brandywine-20260927T162146": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:06:13Z",
+      "notes": ""
+    },
+    "live-deldot_ncam054_i495_brandywine-20260927T162824": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:06:15Z",
+      "notes": ""
+    },
+    "live-deldot_ncam054_i495_brandywine-20260927T163509": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:06:16Z",
+      "notes": ""
+    },
+    "live-deldot_ncam054_i495_brandywine-20260927T164211": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:06:18Z",
+      "notes": ""
+    },
+    "live-deldot_ncam055_i495_terminal-20260927T141714": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:07:46Z",
+      "notes": ""
+    },
+    "live-deldot_ncam055_i495_terminal-20260927T142256": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:07:48Z",
+      "notes": ""
+    },
+    "live-deldot_ncam055_i495_terminal-20260927T142927": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:07:50Z",
+      "notes": ""
+    },
+    "live-deldot_ncam055_i495_terminal-20260927T143632": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:07:52Z",
+      "notes": ""
+    },
+    "live-deldot_ncam055_i495_terminal-20260927T144313": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:07:55Z",
+      "notes": ""
+    },
+    "live-deldot_ncam055_i495_terminal-20260927T144939": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:07:57Z",
+      "notes": ""
+    },
+    "live-deldot_ncam055_i495_terminal-20260927T145619": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:07:59Z",
+      "notes": ""
+    },
+    "live-deldot_ncam055_i495_terminal-20260927T150227": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:08:01Z",
+      "notes": ""
+    },
+    "live-deldot_ncam055_i495_terminal-20260927T150924": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:08:03Z",
+      "notes": ""
+    },
+    "live-deldot_ncam055_i495_terminal-20260927T151521": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:08:05Z",
+      "notes": ""
+    },
+    "live-deldot_ncam055_i495_terminal-20260927T152113": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:08:09Z",
+      "notes": ""
+    },
+    "live-deldot_ncam055_i495_terminal-20260927T152742": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:08:11Z",
+      "notes": ""
+    },
+    "live-deldot_ncam055_i495_terminal-20260927T153347": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:08:13Z",
+      "notes": ""
+    },
+    "live-deldot_ncam055_i495_terminal-20260927T153955": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:08:17Z",
+      "notes": ""
+    },
+    "live-deldot_ncam055_i495_terminal-20260927T154606": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:08:19Z",
+      "notes": ""
+    },
+    "live-deldot_ncam055_i495_terminal-20260927T155250": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:08:21Z",
+      "notes": ""
+    },
+    "live-deldot_ncam055_i495_terminal-20260927T160111": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:08:23Z",
+      "notes": ""
+    },
+    "live-deldot_ncam055_i495_terminal-20260927T160721": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:08:25Z",
+      "notes": ""
+    },
+    "live-deldot_ncam055_i495_terminal-20260927T161331": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:08:27Z",
+      "notes": ""
+    },
+    "live-deldot_ncam055_i495_terminal-20260927T161931": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:08:29Z",
+      "notes": ""
+    },
+    "live-deldot_ncam055_i495_terminal-20260927T162625": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:08:31Z",
+      "notes": ""
+    },
+    "live-deldot_ncam055_i495_terminal-20260927T163251": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:08:33Z",
+      "notes": ""
+    },
+    "live-deldot_ncam055_i495_terminal-20260927T164021": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:08:35Z",
+      "notes": ""
+    },
+    "live-deldot_ncam055_i495_terminal-20260927T164656": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:08:37Z",
+      "notes": ""
+    },
+    "live-deldot_ncam075_i495_us13_south-20260927T141715": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:09:50Z",
+      "notes": ""
+    },
+    "live-deldot_ncam075_i495_us13_south-20260927T142258": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:09:53Z",
+      "notes": ""
+    },
+    "live-deldot_ncam075_i495_us13_south-20260927T143010": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:09:56Z",
+      "notes": ""
+    },
+    "live-deldot_ncam075_i495_us13_south-20260927T143708": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:09:58Z",
+      "notes": ""
+    },
+    "live-deldot_ncam075_i495_us13_south-20260927T144314": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:10:01Z",
+      "notes": ""
+    },
+    "live-deldot_ncam075_i495_us13_south-20260927T145151": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:10:03Z",
+      "notes": ""
+    },
+    "live-deldot_ncam075_i495_us13_south-20260927T145850": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:10:06Z",
+      "notes": ""
+    },
+    "live-deldot_ncam075_i495_us13_south-20260927T150510": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:10:09Z",
+      "notes": ""
+    },
+    "live-deldot_ncam075_i495_us13_south-20260927T151104": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:10:11Z",
+      "notes": ""
+    },
+    "live-deldot_ncam075_i495_us13_south-20260927T151707": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:10:13Z",
+      "notes": ""
+    },
+    "live-deldot_ncam075_i495_us13_south-20260927T152336": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:10:21Z",
+      "notes": ""
+    },
+    "live-deldot_ncam075_i495_us13_south-20260927T153022": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:10:26Z",
+      "notes": ""
+    },
+    "live-deldot_ncam075_i495_us13_south-20260927T153608": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:10:29Z",
+      "notes": ""
+    },
+    "live-deldot_ncam075_i495_us13_south-20260927T154210": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:10:31Z",
+      "notes": ""
+    },
+    "live-deldot_ncam075_i495_us13_south-20260927T154832": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:10:34Z",
+      "notes": ""
+    },
+    "live-deldot_ncam075_i495_us13_south-20260927T155659": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:10:36Z",
+      "notes": ""
+    },
+    "live-deldot_ncam075_i495_us13_south-20260927T160347": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:10:38Z",
+      "notes": ""
+    },
+    "live-deldot_ncam075_i495_us13_south-20260927T161009": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:10:41Z",
+      "notes": ""
+    },
+    "live-deldot_ncam075_i495_us13_south-20260927T161605": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:10:44Z",
+      "notes": ""
+    },
+    "live-deldot_ncam075_i495_us13_south-20260927T162349": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:10:46Z",
+      "notes": ""
+    },
+    "live-deldot_ncam075_i495_us13_south-20260927T163210": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:10:49Z",
+      "notes": ""
+    },
+    "live-deldot_ncam075_i495_us13_south-20260927T164543": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:10:55Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261126T191055": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:38:45Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261126T191719": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:38:50Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T073314": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:38:52Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T073910": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:38:53Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T090122": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:38:55Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T091758": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:38:56Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T092343": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:38:57Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T105425": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:03Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T114616": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:07Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T120915": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:11Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T121514": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:13Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T122114": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:15Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T122741": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:16Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T123355": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:18Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T125121": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:19Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T130240": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:21Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T130954": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:22Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T131659": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:24Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T132427": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:25Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T133052": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:27Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T133733": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:29Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T134348": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:30Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T134954": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:32Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T135554": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:34Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T140155": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:37Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T140745": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:38Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T141345": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:40Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T142024": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:41Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T142624": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:43Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T143403": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:44Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T144006": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:46Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T144620": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:49Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T145220": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:51Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T145801": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:52Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T150529": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:56Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T151157": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:39:59Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T151805": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:40:01Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T152506": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:40:04Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T153137": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:40:12Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T153749": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:40:13Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T154447": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:40:15Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T155059": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:40:17Z",
+      "notes": ""
+    },
+    "live-deldot_pcam4061_event_20261126-20261127T155654": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:40:19Z",
+      "notes": ""
+    },
+    "live-deldot_scam002_bethany_de26-20260927T141713": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:06:29Z",
+      "notes": ""
+    },
+    "live-deldot_scam002_bethany_de26-20260927T142255": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:06:36Z",
+      "notes": ""
+    },
+    "live-deldot_scam002_bethany_de26-20260927T142927": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:06:39Z",
+      "notes": ""
+    },
+    "live-deldot_scam002_bethany_de26-20260927T143705": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:06:42Z",
+      "notes": ""
+    },
+    "live-deldot_scam002_bethany_de26-20260927T144313": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:06:44Z",
+      "notes": ""
+    },
+    "live-deldot_scam002_bethany_de26-20260927T144939": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:06:50Z",
+      "notes": ""
+    },
+    "live-deldot_scam002_bethany_de26-20260927T145619": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:06:59Z",
+      "notes": ""
+    },
+    "live-deldot_scam002_bethany_de26-20260927T150226": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:07:02Z",
+      "notes": ""
+    },
+    "live-deldot_scam002_bethany_de26-20260927T150839": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:07:04Z",
+      "notes": ""
+    },
+    "live-deldot_scam002_bethany_de26-20260927T151559": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:07:06Z",
+      "notes": ""
+    },
+    "live-deldot_scam002_bethany_de26-20260927T152146": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:07:08Z",
+      "notes": ""
+    },
+    "live-deldot_scam002_bethany_de26-20260927T152741": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:07:10Z",
+      "notes": ""
+    },
+    "live-deldot_scam002_bethany_de26-20260927T153420": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:07:11Z",
+      "notes": ""
+    },
+    "live-deldot_scam002_bethany_de26-20260927T154101": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:07:13Z",
+      "notes": ""
+    },
+    "live-deldot_scam002_bethany_de26-20260927T154712": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:07:15Z",
+      "notes": ""
+    },
+    "live-deldot_scam002_bethany_de26-20260927T155539": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:07:17Z",
+      "notes": ""
+    },
+    "live-deldot_scam002_bethany_de26-20260927T160217": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:07:19Z",
+      "notes": ""
+    },
+    "live-deldot_scam002_bethany_de26-20260927T160922": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:07:21Z",
+      "notes": ""
+    },
+    "live-deldot_scam002_bethany_de26-20260927T161531": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:07:23Z",
+      "notes": ""
+    },
+    "live-deldot_scam002_bethany_de26-20260927T162147": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:07:25Z",
+      "notes": ""
+    },
+    "live-deldot_scam002_bethany_de26-20260927T162825": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:07:27Z",
+      "notes": ""
+    },
+    "live-deldot_scam002_bethany_de26-20260927T163509": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:07:30Z",
+      "notes": ""
+    },
+    "live-deldot_scam002_bethany_de26-20260927T164139": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:07:40Z",
+      "notes": ""
+    },
+    "live-deldot_scam002_bethany_de26-20260927T164850": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T17:07:43Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T191057": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:31:20Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T191648": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:31:23Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T192212": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:31:29Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T192742": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:31:47Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T193314": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:31:50Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T193844": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:31:57Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T194412": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:31:59Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T194932": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:01Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T195503": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:03Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T200030": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:05Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T200557": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:07Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T201127": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:08Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T201655": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:10Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T202231": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:12Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T202805": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:14Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T203335": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:15Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T203935": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:17Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T204542": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:19Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T205112": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:21Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T205728": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:22Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T210252": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:25Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T210826": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:28Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T211359": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:31Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T211946": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:33Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T212549": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:35Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T213154": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:36Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T213734": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:38Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T214257": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:40Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T214829": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:44Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T215403": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:46Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T220016": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:48Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T220547": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:52Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T221109": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:53Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T221732": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:55Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T222411": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:57Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T223422": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:32:59Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T224045": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:00Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T224657": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:02Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T225324": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:03Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T231908": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:17Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T232735": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:19Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T233445": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:20Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T234401": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:22Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T234948": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:24Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261126T235727": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:25Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T000500": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:27Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T001433": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:29Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T002006": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:31Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T002539": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:33Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T003112": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:34Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T003654": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:36Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T004527": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:39Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T005228": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:41Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T005910": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:42Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T010527": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:44Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T011149": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:46Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T011809": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:48Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T012335": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:50Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T012908": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:52Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T013428": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:54Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T014001": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:56Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T014538": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:33:58Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T015127": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:34:00Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T015736": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:34:02Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T020314": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:34:04Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T020843": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:34:06Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T025240": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:34:24Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T025940": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:34:26Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T032441": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:34:35Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T033017": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:34:38Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T033756": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:34:40Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T034348": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:34:42Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T034938": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:34:44Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T041909": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:34:55Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T042557": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:34:57Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T043132": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:34:59Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T043720": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:01Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T044259": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:03Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T044832": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:05Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T045421": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:07Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T050042": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:09Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T050710": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:11Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T051242": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:13Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T051901": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:16Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T052639": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:18Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T054311": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:23Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T055215": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:25Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T060131": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:27Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T061236": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:29Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T062328": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:31Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T063313": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:33Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T064015": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:35Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T064810": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:38Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T065424": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:40Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T070120": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:42Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T070711": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:43Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T071324": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:46Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T071843": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:48Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T072655": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:50Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T073315": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:52Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T074016": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:55Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T074707": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:57Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T075249": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:35:59Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T075915": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:36:01Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T080448": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:36:04Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T081028": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:36:06Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T081612": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:36:08Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T082201": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:36:10Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T082814": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:36:13Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T083418": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:36:15Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T084006": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:36:17Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T084709": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:36:19Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T085459": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:36:21Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T090155": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:36:24Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T090802": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:36:26Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T091428": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:36:28Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T092641": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:36:34Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T093329": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:36:44Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T094038": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:36:49Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T094610": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:36:50Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T095144": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:36:52Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T095724": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:36:54Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T100258": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:36:56Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T100846": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:36:57Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T101617": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:00Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T102328": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:01Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T103058": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:03Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T103835": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:04Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T104517": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:05Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T105134": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:07Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T105752": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:09Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T110324": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:12Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T110947": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:14Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T111535": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:17Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T112109": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:19Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T112709": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:21Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T113246": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:23Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T114019": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:25Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T114818": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:27Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T115530": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:29Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T120240": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:31Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T120917": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:33Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T121550": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:34Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T122253": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:37Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T122945": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:39Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T123651": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:40Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T124344": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:42Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T124929": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:43Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T125650": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:45Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T130319": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:47Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T131225": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:48Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T131907": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:49Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T132657": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:51Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T133618": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:52Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T134314": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:54Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T134916": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:56Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T135522": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:57Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T140122": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:37:59Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T140714": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:38:00Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T141347": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:38:02Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T142025": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:38:04Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T142659": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:38:05Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T143244": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:38:09Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T143903": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:38:13Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T144507": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:38:15Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T145254": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:38:16Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T150002": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:38:18Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T150635": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:38:20Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T151240": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:38:22Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T152002": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:38:23Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T153030": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:38:25Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T153718": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:38:26Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T154414": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:38:28Z",
+      "notes": ""
+    },
+    "live-deldot_scam013_dewey_towers-20261127T155146": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:38:29Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T191056": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:08:22Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T191720": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:08:34Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T192251": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:08:38Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T192813": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:08:45Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T193346": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:08:50Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T193915": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:08:53Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T195012": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:09:01Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T195535": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:09:07Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T200102": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:09:10Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T200629": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:09:14Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T201159": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:09:16Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T201729": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:09:19Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T202303": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:09:22Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T202836": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:09:24Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T203406": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:09:27Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T203934": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:09:30Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T204510": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:09:36Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T205039": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:09:38Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T205614": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:09:41Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T210148": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:09:45Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T210718": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:09:48Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T211253": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:09:52Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T211836": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:09:54Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T212410": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:09:57Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T212944": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:09:59Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T213512": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:10:03Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T214049": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:10:06Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T214617": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:10:08Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T215155": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:10:11Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T215728": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:10:15Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T220303": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:10:17Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T220829": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:10:22Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T221407": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:10:25Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T221939": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:10:29Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T222514": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:10:36Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T223142": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:10:39Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T223751": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:10:41Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T224341": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:10:45Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T225028": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:10:47Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T225607": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:10:50Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T230257": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:10:54Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T230908": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:10:56Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T231500": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:10:59Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T232100": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:11:01Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T232657": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:11:03Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T233325": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:11:05Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T234057": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:11:08Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T234650": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:11:11Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T235227": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:11:13Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261126T235954": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:11:19Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T000531": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:11:21Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T001154": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:11:23Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T001754": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:11:25Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T002322": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:11:28Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T002857": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:11:30Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T003431": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:11:32Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T004028": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:11:34Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T004640": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:11:37Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T005228": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:11:39Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T005837": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:11:42Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T010414": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:11:52Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T011117": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:11:57Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T011649": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:11:59Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T012222": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:12:02Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T012756": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:12:05Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T013324": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:12:09Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T013929": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:12:12Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T014537": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:12:15Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T015127": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:12:18Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T015703": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:12:20Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T020241": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:12:24Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T020810": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:12:27Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T021353": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:12:30Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T021947": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:12:32Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T022539": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:12:34Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T023135": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:12:37Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T023724": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:12:39Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T024320": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:12:41Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T024859": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:12:45Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T025507": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:12:48Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T030043": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:12:51Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T030633": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:12:53Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T031212": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:12:56Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T031757": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:12:59Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T032409": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:13:01Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T033017": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:13:04Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T033710": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:13:07Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T034348": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:13:10Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T034938": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:13:13Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T035657": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:13:15Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T040259": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:13:31Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T040822": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:13:35Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T041402": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:13:38Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T041940": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:13:40Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T042557": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:13:44Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T043132": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:13:46Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T043718": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:13:49Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T044258": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:13:52Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T044903": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:13:55Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T045453": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:13:57Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T050119": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:14:10Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T050710": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:14:15Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T051242": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:14:17Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T051901": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:14:19Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T052525": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:14:21Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T053129": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:14:23Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T053724": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:14:25Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T054310": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:14:27Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T054911": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:14:29Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T055517": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:14:32Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T060202": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:14:35Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T060815": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:14:37Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T061454": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:14:40Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T062327": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:14:43Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T062944": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:14:45Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T063534": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:14:50Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T064135": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:14:53Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T064734": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:14:55Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T065320": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:14:57Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T065856": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:15:01Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T070603": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:15:04Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T071134": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:15:06Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T071706": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:15:08Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T072241": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:15:10Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T072839": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:15:12Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T073420": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:15:17Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T074015": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:15:20Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T074547": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:15:24Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T075145": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:15:26Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T075737": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:15:30Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T080311": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:15:33Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T080843": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:15:35Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T081504": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:15:38Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T082048": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:15:46Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T082701": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:15:48Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T083257": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:15:50Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T083928": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:15:52Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T084526": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:15:54Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T085120": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:15:56Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T085720": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:15:58Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T090259": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:16:02Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T090834": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:16:04Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T091500": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:16:06Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T092119": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:16:10Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T092715": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:16:13Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T093329": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:16:15Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T093929": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:16:17Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T094458": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:16:19Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T095040": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:16:21Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T095616": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:16:23Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T100153": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:16:27Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T100728": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:16:29Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T101327": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:16:31Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T101903": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:16:36Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T102503": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:16:38Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T103058": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:16:40Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T103654": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:16:43Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T104256": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:16:45Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T104830": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:16:47Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T105426": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:16:49Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T110000": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:16:52Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T110532": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:16:56Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T111134": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:16:59Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T111710": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:17:01Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T112340": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:17:06Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T112957": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:17:09Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T113540": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:17:19Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T114156": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:17:22Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T114817": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:17:25Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T115415": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:17:27Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T120018": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:17:30Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T120618": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:17:32Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T121221": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:17:34Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T121815": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:17:36Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T122443": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:17:39Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T123052": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:17:42Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T123723": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:17:45Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T124304": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:17:49Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T124856": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:17:52Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T125456": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:17:54Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T130128": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:17:57Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T130804": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:18:03Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T131555": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:18:06Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T132900": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:18:15Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T133618": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:18:18Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T134236": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:18:20Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T134915": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:18:23Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T135604": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:18:26Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T140203": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:18:29Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T140746": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:18:32Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T141346": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:18:34Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T142025": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:18:38Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T142657": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:18:40Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T143243": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:18:43Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T143935": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:18:46Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T144539": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:18:48Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T145221": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:18:50Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T145802": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:18:53Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T150457": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:18:55Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T151046": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:18:58Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T151734": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:19:00Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T152545": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:19:03Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T153234": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:19:06Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T153832": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:19:08Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T154448": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:19:11Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T155100": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:19:13Z",
+      "notes": ""
+    },
+    "live-deldot_scam098_indian_river_inlet_n-20261127T155657": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:19:16Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T191056": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:19:22Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T191645": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:19:28Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T192211": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:19:31Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T192741": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:19:34Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T193313": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:19:37Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T193842": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:19:40Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T194442": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:19:43Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T195011": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:19:46Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T195534": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:19:49Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T200101": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:19:53Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T200700": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:19:55Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T201230": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:19:58Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T201833": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:20:01Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T202406": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:20:04Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T202939": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:20:07Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T203542": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:20:09Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T204110": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:20:16Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T204645": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:20:20Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T205214": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:20:22Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T205833": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:20:26Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T210359": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:20:30Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T210929": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:20:33Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T211508": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:20:36Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T212049": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:20:39Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T212619": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:20:50Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T213152": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:20:54Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T213805": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:20:56Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T214328": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:20:58Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T214900": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:21:00Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T215514": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:21:02Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T220127": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:21:04Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T220653": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:21:05Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T221222": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:21:07Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T221835": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:21:09Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T222409": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:21:11Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T223013": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:21:13Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T223612": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:21:21Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T224154": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:21:23Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T224727": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:21:25Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T225427": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:21:27Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T230100": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:21:29Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T230701": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:22:31Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T231309": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:22:34Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T231904": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:22:36Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T232505": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:22:38Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T233107": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:22:40Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T233706": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:22:42Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261126T234400": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:22:44Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T000208": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:22:54Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T002642": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:23:03Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T004446": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:23:10Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T005148": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:23:13Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T005837": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:23:15Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T022619": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:24:58Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T023207": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:25:01Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T030410": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:25:13Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T031540": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:25:17Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T032149": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:25:19Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T034118": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:25:25Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T034831": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:25:27Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T035511": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:25:29Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T040150": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:25:30Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T040717": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:25:33Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T041254": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:25:35Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T042452": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:25:39Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T044258": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:25:45Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T044831": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:25:47Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T050112": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:25:51Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T051241": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:25:56Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T051816": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:25:58Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T052418": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:26:00Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T053054": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:26:03Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T053640": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:26:05Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T054310": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:26:07Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T054911": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:26:09Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T055517": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:26:11Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T060233": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:26:13Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T060847": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:26:15Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T061454": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:26:17Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T062120": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:26:20Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T062831": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:26:27Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T063423": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:26:40Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T064046": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:26:44Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T064733": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:26:46Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T065319": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:26:49Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T065855": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:26:50Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T070531": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:26:52Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T071102": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:26:53Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T071634": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:26:55Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T072240": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:26:56Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T072839": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:26:58Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T074546": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:27:04Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T080342": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:27:09Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T080915": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:27:11Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T083449": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:27:23Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T084708": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:27:27Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T085307": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:27:29Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T085904": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:27:31Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T090522": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:27:33Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T093005": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:27:40Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T093738": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:27:42Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T094322": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:27:44Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T094848": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:27:46Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T095505": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:27:47Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T100041": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:27:49Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T100624": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:27:51Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T101757": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:27:55Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T102937": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:27:59Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T104757": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:28:04Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T105353": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:28:06Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T105927": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:28:08Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T111134": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:28:12Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T111709": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:28:20Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T112333": {
+      "image_class": "uncertain",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:28:23Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T112956": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:28:27Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T113540": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:28:30Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T114308": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:28:36Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T115047": {
+      "image_class": "flood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:28:38Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T115707": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:28:45Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T120431": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:28:49Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T121148": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:28:51Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T121814": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:28:54Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T122637": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:30:00Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T123323": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:30:02Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T124127": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:30:05Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T124747": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:30:07Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T125423": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:30:09Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T130008": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:30:12Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T130719": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:30:14Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T131420": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:30:16Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T132355": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:30:18Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T133133": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:30:21Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T134130": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:30:22Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T134801": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:30:24Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T135449": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:30:26Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T140121": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:30:29Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T140713": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:30:32Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T141346": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:30:35Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T142024": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:30:39Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T142657": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:30:41Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T143442": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:30:45Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T144122": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:30:48Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T144726": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:30:50Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T145358": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:30:53Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T150000": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:30:55Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T150602": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:30:57Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T151311": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:30:59Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T152040": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:31:02Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T152941": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:31:04Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T153605": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:31:06Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T154413": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:31:08Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T155059": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:31:11Z",
+      "notes": ""
+    },
+    "live-deldot_scam169_event_20261126-20261127T155654": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-11-27T16:31:14Z",
+      "notes": ""
+    },
+    "live-fl511_broward_griffin_us441-20260908T233828": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T16:53:35Z",
+      "notes": ""
+    },
+    "live-fl511_broward_griffin_us441-20260908T234032": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T16:54:10Z",
+      "notes": ""
+    },
+    "live-fl511_broward_oakland_park_i95-20260908T233828": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T16:53:30Z",
+      "notes": ""
+    },
+    "live-fl511_broward_oakland_park_i95-20260908T234032": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T16:54:07Z",
+      "notes": ""
+    },
+    "live-fl511_miami_i195_alton-20260908T233827": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T16:53:06Z",
+      "notes": ""
+    },
+    "live-fl511_miami_i195_alton-20260908T234031": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T16:53:43Z",
+      "notes": ""
+    },
+    "live-fl511_miami_i395_alton-20260908T233827": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T16:53:13Z",
+      "notes": ""
+    },
+    "live-fl511_miami_i395_alton-20260908T234031": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T16:53:54Z",
+      "notes": ""
+    },
+    "live-fl511_miami_us1_port_blvd-20260908T233828": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T16:53:22Z",
+      "notes": ""
+    },
+    "live-fl511_miami_us1_port_blvd-20260908T234031": {
+      "image_class": "nonflood",
+      "labeled_by": "",
+      "labeled_at": "2026-09-27T16:54:02Z",
+      "notes": ""
+    }
+  }
+}
